@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patterns on Natan Santolo</title>
+    <link>http://www.natansantolo.com/tags/patterns/</link>
+    <description>Recent content in Patterns on Natan Santolo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en_US</language>
+    <lastBuildDate>Thu, 23 May 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.natansantolo.com/tags/patterns/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Meaningful JavaScript Interfaces</title>
+      <link>http://www.natansantolo.com/post/meaningful-javaScript-interfaces/</link>
+      <pubDate>Thu, 23 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.natansantolo.com/post/meaningful-javaScript-interfaces/</guid>
+      <description>&lt;p&gt;Object literals in javascript are awesome, we can use them to improve the way we are communicating our components interfaces, make them sort of self-explanatory. There is plenty of good docs about &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects&#34;&gt;working with objects around the web&lt;/a&gt;. Here an &lt;em&gt;illustrative&lt;/em&gt; example how to create a easy to understand interface to query an API:&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/natos/5632861.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Every project has different needs, and that&amp;rsquo;s why we need to put some effort in design our solutions. This patterns can be really useful when you work with lot&amp;rsquo;s of people. Agreeing upon an interface is the first contract you have to sign. Later, some can be focus on developing the tools, and others in making the product. At least in my experience, creating meaningful interfaces, empowers your team. A meaningful interface is like Iron Man&amp;rsquo;s suit. Who wouldn&amp;rsquo;t like to be like Tony Stark?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.natansantolo.com/assets/images/meaningful-javascript-interfaces/stark.jpg&#34; alt=&#34;Iron Man&#39;s first helmet&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I hope you find this useful :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Currying with JavaScript</title>
+      <link>http://www.natansantolo.com/post/curriyng-with-javascript/</link>
+      <pubDate>Wed, 22 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.natansantolo.com/post/curriyng-with-javascript/</guid>
+      <description>&lt;p&gt;&amp;laquo;In mathematics and computer science, &lt;strong&gt;currying&lt;/strong&gt; is the technique of transforming a function that takes multiple arguments.&amp;raquo; &lt;a href=&#34;http://en.wikipedia.org/wiki/Currying&#34;&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I spend good part of the day writing JavaScript and It&amp;rsquo;s all about creating usable interfaces to share code with other people, exposing an understandable API, so they can learn it and build faster. Currying could help in some cases to improve how we implement certain solutions, and it&amp;rsquo;s algo quite pattern fun to use.&lt;/p&gt;
+
+&lt;p&gt;I wanted to share a simple example of how to apply curry pattern in JavaScript, it may be handy some times to improve component&amp;rsquo;s interfaces or just for lazy processing stuff, so here a &lt;a href=&#34;https://gist.github.com/natos/5626328#file-currying_example-js&#34;&gt;simple function to add numbers&lt;/a&gt; and accumulate the result:&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;http://jsfiddle.net/natos/PfyYw/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I hope you find this useful :)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

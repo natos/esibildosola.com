@@ -1,0 +1,50 @@
+title = "Marcela Viola"
+languagecode = "en_US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
+
+baseurl = "http://www.marcelaviola.com.ar/"
+
+relativeurls = false
+canonifyurls = true
+watch = true
+
+[author]
+  name = "Natan Santolo"
+
+[params]
+  description = "Aerialist, silks, lyra, and straps."
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+SectionPagesMenu = "social"
+
+[[menu.social]]
+  name = "Facebook"
+  identifier = "facebook"
+  url = "https://www.facebook.com/MarcelaViola.Aerialist"
+  pre = "<i class='fa fa-facebook-square'></i>"
+  weight = 1
+[[menu.social]]
+  name = "Instagram"
+  identifier = "instagram"
+  url = "https://www.instagram.com/pulgacion/"
+  pre = "<i class='fa fa-instagram-square'></i>"
+  weight = 2
+[[menu.social]]
+  name = "YouTube"
+  identifier = "youtube"
+  url = "https://www.youtube.com/user/MarcelaViolaAerial/videos"
+  pre = "<i class='fa fa-youtube-square'></i>"
+  weight = 3
+[[menu.social]]
+  name = "Vimeo"
+  identifier = "vimeo"
+  url = "https://vimeo.com/user13778635/videos"
+  pre = "<i class='fa fa-vimeo-square'></i>"
+  weight = 4

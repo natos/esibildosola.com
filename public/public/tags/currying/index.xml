@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Currying on Natan Santolo</title>
+    <link>http://www.natansantolo.com/tags/currying/</link>
+    <description>Recent content in Currying on Natan Santolo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en_US</language>
+    <lastBuildDate>Wed, 22 May 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.natansantolo.com/tags/currying/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Currying with JavaScript</title>
+      <link>http://www.natansantolo.com/post/curriyng-with-javascript/</link>
+      <pubDate>Wed, 22 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.natansantolo.com/post/curriyng-with-javascript/</guid>
+      <description>&lt;p&gt;&amp;laquo;In mathematics and computer science, &lt;strong&gt;currying&lt;/strong&gt; is the technique of transforming a function that takes multiple arguments.&amp;raquo; &lt;a href=&#34;http://en.wikipedia.org/wiki/Currying&#34;&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I spend good part of the day writing JavaScript and It&amp;rsquo;s all about creating usable interfaces to share code with other people, exposing an understandable API, so they can learn it and build faster. Currying could help in some cases to improve how we implement certain solutions, and it&amp;rsquo;s algo quite pattern fun to use.&lt;/p&gt;
+
+&lt;p&gt;I wanted to share a simple example of how to apply curry pattern in JavaScript, it may be handy some times to improve component&amp;rsquo;s interfaces or just for lazy processing stuff, so here a &lt;a href=&#34;https://gist.github.com/natos/5626328#file-currying_example-js&#34;&gt;simple function to add numbers&lt;/a&gt; and accumulate the result:&lt;/p&gt;
+
+&lt;iframe width=&#34;100%&#34; height=&#34;300&#34; src=&#34;http://jsfiddle.net/natos/PfyYw/embedded/&#34; allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I hope you find this useful :)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

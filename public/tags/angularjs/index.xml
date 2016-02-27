@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angularjs on Marcela Viola</title>
+    <link>http://www.marcelaviola.com.ar/tags/angularjs/</link>
+    <description>Recent content in Angularjs on Marcela Viola</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en_US</language>
+    <lastBuildDate>Sat, 27 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.marcelaviola.com.ar/tags/angularjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Marcela Viola</title>
+      <link>http://www.marcelaviola.com.ar/post/angular-switchery/</link>
+      <pubDate>Sat, 27 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.marcelaviola.com.ar/post/angular-switchery/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://www.marcelaviola.com.ar/assets/images/angular-switchery/switchery.png&#34; alt=&#34;Switchery&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/abpetkov&#34;&gt;Alexander&lt;/a&gt; built this beautiful checkbox component called &lt;a href=&#34;http://abpetkov.github.io/switchery/&#34;&gt;Switchery&lt;/a&gt;. From their website: &amp;ldquo;Switchery is a simple component that helps you turn your default HTML checkbox inputs into beautiful iOS 7 style switches in just few simple steps. You can easily customize switches, so that they match your design perfectly.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.marcelaviola.com.ar/assets/images/angular-switchery/spaaza.png&#34; alt=&#34;Spaaza Screenshot&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve used it along different projects, I&amp;rsquo;m really happy with it. But when I tried to included in a project using AngularJS, I found a few challenges. Although there are a few directives around (like &lt;a href=&#34;https://github.com/servergrove/NgSwitchery&#34;&gt;NgSwitchery&lt;/a&gt;), I couldn&amp;rsquo;t find one with support for two-way binding, I needed to keep my models updated. So I went for it and built a new directive.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.marcelaviola.com.ar/assets/images/angular-switchery/console.png&#34; alt=&#34;Spaaza Screenshot&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s &lt;a href=&#34;http://natos.github.io/angular-switchery/&#34;&gt;Angular Switchery&lt;/a&gt;, &lt;a href=&#34;https://docs.angularjs.org/guide/directive&#34;&gt;a directive&lt;/a&gt; that transform a simple checkbox into a switch that, and supports bindings to scope variables, to keep view and data in sync. You&amp;rsquo;ll find the code and install instructions in &lt;a href=&#34;https://github.com/natos/angular-switchery&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Run this JSFiddle to see it working or &lt;a href=&#34;http://natos.github.io/angular-switchery/&#34;&gt;check the demo&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
