@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://www.marcelaviola.com.ar/</loc>
+    <lastmod>2016-02-27T23:28:53+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.marcelaviola.com.ar/contact/</loc>
+    <lastmod>2016-02-27T23:28:53+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.marcelaviola.com.ar/workshops/</loc>
+    <lastmod>2016-02-27T23:28:36+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.marcelaviola.com.ar/classes/</loc>
+    <lastmod>2016-02-27T23:28:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.marcelaviola.com.ar/shows/</loc>
+    <lastmod>2016-02-27T23:28:13+01:00</lastmod>
+  </url>
+  
+</urlset>
