@@ -1,5 +1,5 @@
 {{ $len := len $.Site.Data.home.hero}}
-<div class="slider drive-{{ $len }}">
+<div class="hero-slider slider drive-{{ $len }}">
     <figure>
         {{ range $.Site.Data.home.hero }}
               <img src="{{ . }}">

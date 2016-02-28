@@ -379,6 +379,11 @@ h1 a { color: #333;}
 .slider {
   overflow: hidden;
 }
+.hero-slider {
+  position: fixed;
+  top: 60px;
+  bottom: 0; left: 0; right: 0;
+}
 // .slider figure img { width: 20%; float: left; }
 .slider figure {
   display: flex;
