@@ -4,14 +4,17 @@ title = "shows"
 
 +++
 
+{{< hero>}}
+{{% image src="/assets/images/shows/silks1.jpg" %}}
+{{< /hero >}}
+
 # Shows
 
 ## Silks
 
 Usus legentis in iis qui facit: eorum claritatem Investigationes demonstraverunt lectores legere me lius. Ut laoreet dolore magna aliquam erat volutpat ut wisi enim ad minim veniam. Vulputate velit esse molestie consequat vel illum dolore eu feugiat nulla facilisis at vero eros?
 
-{{< slider slots="6" >}}
-{{% image src="/assets/images/shows/silks1.jpg" %}}
+{{< slider slots="5" >}}
 {{% image src="/assets/images/shows/silks2.jpg" %}}
 {{% image src="/assets/images/shows/silks3.jpg" %}}
 {{% image src="/assets/images/shows/silks4.jpg" %}}
