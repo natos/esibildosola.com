@@ -222,6 +222,7 @@ h1 a { color: #333;}
 }
 
 .bug {
-  color: #ccc;
+  opacity: .5;
+  color: #fff;
   text-align: center;
 }
