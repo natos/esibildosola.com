@@ -1,5 +1,7 @@
 <section class="hero">
-    {{ range $.Site.Data.home.hero }}
-          <img src="{{ . }}">
-    {{ end }}
+    <div class="driver">
+        {{ range $.Site.Data.home.hero }}
+              <img src="{{ . }}">
+        {{ end }}
+    </div>
 </section>

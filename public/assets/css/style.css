@@ -47,7 +47,9 @@ main {
 }
 iframe { margin-bottom: 32px; }
 footer {
+  position: relative;
   text-align: center;
+  border-bottom: 1em solid #C4B014;
   padding: 5em;
 }
 footer,
@@ -78,10 +80,8 @@ h1 a { color: #333;}
 
 .wrap {
   width: 100%;
-  // max-width: 768px;
   margin: 0 auto;
   padding: 0;
-  // padding: 2.5em 7% 5em 7%;
 }
 
 .m-0 { height: 100%; margin-top: 0; margin-bottom: 0; }
@@ -100,6 +100,7 @@ h1 a { color: #333;}
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('/assets/images/logo-horizontal.png');
+  background-image: url('/marcelaviola.com.ar/assets/images/logo-horizontal.png');
   transform: translate3d(-50%, -40%, 0) scale(.25);
   transition: all .1s ease-in-out;
 }
@@ -108,6 +109,7 @@ h1 a { color: #333;}
   opacity: 1;
 }
 .mb {
+  z-index: 1000;
   position: fixed;
   top: 0; left: 0; right: 0;
   margin-bottom: 5em;
@@ -137,7 +139,6 @@ h1 a { color: #333;}
 .fr { float: right; }
 
 .small time { color: #999; }
-.about { margin-bottom: 5em; }
 .nav {
   font-family: Helvetica, Arial;
 }
@@ -173,8 +174,39 @@ h1 a { color: #333;}
 .social-nav-item-icon { font-size: 1.5em; }
 .social-nav-item-label { display: none; }
 
+html, body, .wrap {
+  height: 100%;
+}
+
+.hero {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -1;
+  height: 100%;
+}
+.hero .driver {
+  overflow-x: scroll;
+  height: 100%;
+}
+.hero .driver.horizontal {
+  display: flex;
+  flex-direction: row;
+}
 .hero img {
+  display: block;
   width: 100%;
   margin: 0;
   padding: 0;
+}
+.hero .driver.horizontal img {
+  flex: 1 1 auto;
+}
+
+.about {
+  position: relative;
+  color: #fff;
+  border-bottom: 1em solid #078191;
+  background-color: #14B6CC;
+  padding: 5em;
+  margin: 100% 0;
 }
