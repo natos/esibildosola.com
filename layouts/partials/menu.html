@@ -1,5 +1,7 @@
 <nav class="nav">
-    {{ range .Site.Menus.global }}
-    <a class="nav-item" href="{{.URL}}">{{.Name}}</a>
+    {{ $currentNode := . }}
+    <pre>{{ . }}</pre>
+    {{ range .Site.Menus.main }}
+    <a class="nav-item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
     {{ end }}
 </nav>

@@ -22,29 +22,30 @@ watch = true
   category = "categories"
   tag = "tags"
 
-SectionPagesMenu = "global"
 
-[[menu.global]]
+SectionPagesMenu = "main"
+
+[[menu.main]]
   name = "Shows"
   identifier = "shows"
   url = "/shows"
   weight = 1
-[[menu.global]]
+[[menu.main]]
   name = "Classes"
   identifier = "classes"
   url = "/classes"
   weight = 2
-[[menu.global]]
+[[menu.main]]
   name = "Workshops"
   identifier = "workshops"
   url = "/workshops"
   weight = 3
-[[menu.global]]
+[[menu.main]]
   name = "Blog"
   identifier = "blog"
   url = "https://medium.com/@marcelaviola"
   weight = 4
-[[menu.global]]
+[[menu.main]]
   name = "Contact"
   identifier = "contact"
   url = "/contact"

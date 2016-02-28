@@ -1,4 +1,9 @@
 [links]
+[links.twitter]
+  name = "Twitter"
+  identifier = "twitter"
+  url = "https://twitter.com/PulgaMimetica"
+  icon = "fa fa-twitter-square"
 [links.facebook]
   name = "Facebook"
   identifier = "facebook"
@@ -9,11 +14,6 @@
   identifier = "instagram"
   url = "https://www.instagram.com/pulgacion/"
   icon = "fa fa-instagram"
-[links.youtube]
-  name = "YouTube"
-  identifier = "youtube"
-  url = "https://www.youtube.com/user/MarcelaViolaAerial/videos"
-  icon = "fa fa-youtube-square"
 [links.vimeo]
   name = "Vimeo"
   identifier = "vimeo"

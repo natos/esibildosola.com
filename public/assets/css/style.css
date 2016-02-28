@@ -48,18 +48,74 @@ p, .p {
 }
 small, .small { font-size: 16px; }
 main {
-  padding: 2em;
+  position: relative;
+  padding: 2em 0;
+}
+main::before {
+  /* icon */
+  /* content: "\f103"; */
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  /* icon end */
+  position: absolute;
+  z-index: 900;
+  left: 50%;
+  top: 1em;
+  transform: translate3d(0, -50%, 0);
+  opacity: .5;
+  color: #efefef;
+  text-align: center;
+  font-size: 2em;
+}
+main h1:first-of-type {
+  padding-top: 2em;
+}
+main h1,
+main h2,
+main p  {
+  padding: 1% 5%;
+}
+maing p {
+  padding: 1% 5% 3%;
+}
+article > p:last-of-type {
+  margin-bottom: 3em;
+}
+figure {
+  margin: 0;
+  padding: 0;
 }
 iframe { margin-bottom: 32px; }
 footer {
   position: relative;
   text-align: center;
-  border-bottom: 1em solid #C4B014;
+  border-top: 1em solid #C4B014;
   padding: 5em;
+}
+footer::before {
+  /* bug icon */
+  content: "\f188";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  /* bug icon end */
+  position: absolute;
+  z-index: 900;
+  left: 50%;
+  top: 20%;
+  transform: translate3d(0, -50%, 0);
+  opacity: .5;
+  color: #C4B014;
+  text-align: center;
 }
 footer,
 footer a {
-  color: #333;
+  color: #C4B014;
   background-color: #FFE419;
 }
 footer .heart {
@@ -103,6 +159,7 @@ h1 a { color: #333;}
   width: 439px;
   height: 198px;
   background-size: cover;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: url('/assets/images/logo-horizontal.png');
   background-image: url('/marcelaviola.com.ar/assets/images/logo-horizontal.png');
@@ -110,16 +167,31 @@ h1 a { color: #333;}
   transition: all .1s ease-in-out;
 }
 .m-0 a:hover::after {
-  transform: translate3d(-50%, -25%, 0) scale(.5);
+  transform: translate3d(-50%, -30%, 0) scale(.5);
   opacity: 1;
 }
 
 @keyframes color_change {
-  0% { background-color: rgba(135, 10, 74, .75); }
-  25% { background-color: rgba(20, 182, 204, .75); }
-  50% { background-color: rgba(255, 0, 130, .75); }
-  75% { background-color: rgba(196, 176, 20, .75); }
-  100% { background-color: rgba(7, 129, 145, .75); }
+  0% {
+    border-color: rgba(135, 10, 74, .75);
+    background-color: rgba(135, 10, 74, .75);
+  }
+  25% {
+    border-color: rgba(20, 182, 204, .75);
+    background-color: rgba(20, 182, 204, .75);
+  }
+  50% {
+    border-color: rgba(255, 0, 130, .75);
+    background-color: rgba(255, 0, 130, .75);
+  }
+  75% {
+    border-color: rgba(196, 176, 20, .75);
+    background-color: rgba(196, 176, 20, .75);
+  }
+  100% {
+    border-color: rgba(7, 129, 145, .75);
+    background-color: rgba(7, 129, 145, .75);
+  }
 }
 
 .mb {
@@ -127,6 +199,8 @@ h1 a { color: #333;}
   position: fixed;
   top: 0; left: 0; right: 0;
   padding: 1em 2em;
+  border-bottom: 1em solid transparent;
+  border-color: rgba(178, 13, 97, .75);
   background-color: rgba(178, 13, 97, .75);
   animation: color_change 25s infinite alternate;
 }
@@ -154,17 +228,22 @@ h1 a { color: #333;}
 
 .small time { color: #999; }
 .nav {
+  display: flex;
   font-family: Helvetica, Arial;
 }
 .nav-item {
+  display: block;
   margin-right: 1em;
   color: #eee;
 }
 .nav-item:hover {
   color: #fff;
+  transform: scale(1.2);
 }
 .social-nav {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media screen and (min-width: 640px) {
   .social-nav {
@@ -188,52 +267,236 @@ h1 a { color: #333;}
 .social-nav-item-icon { font-size: 1.5em; }
 .social-nav-item-label { display: none; }
 
-// html, body, .wrap {
-//   height: 100%;
-// }
-
 .hero {
+  position: absolute;
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 60px; left: 0; right: 0; bottom: 0;
   z-index: -1;
   height: 100%;
 }
-.hero .driver {
-  overflow-x: scroll;
-  height: 100%;
-}
-.hero .driver.horizontal {
-  display: flex;
-  flex-direction: row;
-}
 .hero img {
   display: block;
-  width: 100%;
+  width: auto;
   margin: 0;
   padding: 0;
-}
-.hero .driver.horizontal img {
-  flex: 1 1 auto;
 }
 
 .about {
   position: relative;
-  color: #fff;
+  color: #eee;
+  border-bottom: 1em solid #333;
+  background-color: #000;
+  padding: 5em;
+  padding-right: 50%;
+  margin: 50% 0 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/about/bio-background.jpg');
+  background-image: url('/marcelaviola.com.ar/assets/images/about/bio-background.jpg');
+}
+
+.friends {
+  position: relative;
+  color: #eee;
   border-bottom: 1em solid #078191;
   background-color: #14B6CC;
   padding: 5em;
-  margin: 100% 0;
-}
-
-.about img {
-  display: block;
-  float: right;
-  width: 33%;
-  margin-left: 2em;
-}
-
-.bug {
-  opacity: .5;
-  color: #fff;
+  margin: 0 0 50% 0;
   text-align: center;
+}
+.friends .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.friends .links a {
+  flex: 1;
+  color: #eee;
+  display: block;
+  margin-right: 1em;
+}
+.friends .links a:hover {
+  color: #fff;
+}
+
+.shows {
+  background-color: #efefef;
+}
+.shows,
+.shows figure {
+  margin: 0;
+  padding: 0;
+}
+.shows figure img {
+  display: block;
+  width: 100%;
+  width: 1280px;
+}
+.shows h2 {
+  margin-top: 2em;
+}
+
+@keyframes slidy2 {
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(-100%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes slidy3 {
+  0% { transform: translate3d(0%, 0, 0); }
+  33.3333% { transform: translate3d(-33.333%, 0, 0); }
+  66.6666% { transform: translate3d(-66.6666%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes slidy4 {
+  0% { transform: translate3d(0%, 0, 0); }
+  25% { transform: translate3d(-25%, 0, 0); }
+  50% { transform: translate3d(-50%, 0, 0); }
+  75% { transform: translate3d(-75%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes slidy5 {
+  0% { transform: translate3d(0, 0, 0); }
+  20% { transform: translate3d(-20%, 0, 0); }
+  40% { transform: translate3d(-40%, 0, 0); }
+  60% { transform: translate3d(-60%, 0, 0); }
+  80% { transform: translate3d(-80%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes slidy6 {
+  0% { transform: translate3d(0, 0, 0); }
+  16.6666% { transform: translate3d(-16.6666%, 0, 0); }
+  33.3332% { transform: translate3d(-33.3332%, 0, 0); }
+  48.9998% { transform: translate3d(-48.9998%, 0, 0); }
+  66.6664% { transform: translate3d(-66.6664%, 0, 0); }
+  83.333% { transform: translate3d(-83.333%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.slider {
+  overflow: hidden;
+}
+// .slider figure img { width: 20%; float: left; }
+.slider figure {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  transform: translate3d(0, 0, 0);
+  transition-duration: .5s;
+  animation: none;
+}
+.slider.drive-1 figure { width: 100%; animation: none; }
+.slider.drive-1 figure img { width: 100%; }
+.slider.drive-2 figure { width: 200%; }
+.slider.drive-2:hover figure { animation: 20s slidy2 infinite; }
+.slider.drive-2 figure img { width: 100%; }
+.slider.drive-3 figure { width: 300%; }
+.slider.drive-3:hover figure { animation: 30s slidy3 infinite; }
+.slider.drive-3 figure img { width: 100%; }
+.slider.drive-4 figure { width: 400%; }
+.slider.drive-4:hover figure { animation: 40s slidy4 infinite; }
+.slider.drive-4 figure img { width: 100%; }
+.slider.drive-5 figure { width: 500%; }
+.slider.drive-5:hover figure { animation: 50s slidy5 infinite; }
+.slider.drive-5 figure img { width: 33.3332%; }
+.slider.drive-6 figure { width: 600%; }
+.slider.drive-6:hover figure { animation: 60s slidy6 infinite; }
+.slider.drive-6 figure img { width: 16.6666%; }
+
+.classes {
+  padding: 0;
+  padding-top: 1em;
+  margin: 40% 0 50%;
+  color: #eee;
+  background-color: #870A4A;
+  background-color: rgba(135, 10, 74, 0.9);
+  border-bottom: 1em solid #4A0528;
+}
+.classes::before {
+  /* angle-double-down icon */
+  content: "\f103";
+  /* angle-double-down icon end */
+}
+.classes .hero img {
+  width: 100%;
+}
+.classes .images {
+  overflow: hidden;
+  height: 800px;
+  margin-bottom: 2em;
+}
+.classes .images,
+.classes .images figure {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.classes .images figure img {
+  flex: 1;
+  display: block;
+  width: 50%;
+}
+
+.workshops {
+  position: relative;
+  padding: 0;
+  padding-top: 1em;
+  margin: 40% 0 50%;
+  color: #eee;
+  background-color: #507F2B;
+  background-color: rgba(72, 115, 39, .9);
+  border-bottom: 1em solid #2E4A19;
+}
+
+.workshops::before {
+  /* angle-double-down icon */
+  content: "\f103";
+  /* angle-double-down icon end */
+}
+
+.workshops .hero img {
+  width: 100%;
+}
+
+.contact {
+  position: relative;
+  color: #eee;
+  border-bottom: 1em solid #055863;
+  background-color: #078191;
+  padding: 5em;
+  padding-right: 50%;
+  // margin: 100% 0 0 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/contact/contact-background.jpg');
+  background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-background.jpg');
+}
+.contact a {
+  color: #eee;
+}
+.contact a:hover {
+  color: #fff;
+}
+.contact li {
+  list-style: none;
+  vertical-align: top;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+.contact li a {
+vertical-align: top;
+}
+.contact li a i {
+ font-size: 1.5em;
+ margin-right: .5em;
 }

@@ -1,4 +1,9 @@
 {{ partial "head.html" . }}
-{{ partial "hero.html" . }}
-{{ partial "about.html" . }}
+<main class="{{.Title}}">
+    <article>
+        {{ partial "hero.html" . }}
+        {{ partial "about.html" . }}
+        {{ partial "friends.html" . }}
+    </article>
+</main>
 {{ partial "foot.html" . }}

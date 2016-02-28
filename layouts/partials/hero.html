@@ -1,7 +1,8 @@
-<section class="hero">
-    <div class="driver">
+{{ $len := len $.Site.Data.home.hero}}
+<div class="slider drive-{{ $len }}">
+    <figure>
         {{ range $.Site.Data.home.hero }}
               <img src="{{ . }}">
         {{ end }}
-    </div>
-</section>
+    </figure>
+</div>
