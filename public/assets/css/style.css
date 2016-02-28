@@ -39,7 +39,18 @@ p, .p {
 small, .small { font-size: 16px; }
 
 iframe { margin-bottom: 32px; }
-footer { text-align: center; }
+footer {
+  text-align: center;
+  padding: 1em;
+}
+footer,
+footer a {
+  color: #eee;
+  background-color: #333;
+}
+footer a:hover {
+  color: #ccc;
+}
 
 @media screen and (min-width: 640px) {
   h1, .h1 { font-size: 48px; }
@@ -52,26 +63,22 @@ a:hover { color: #069; }
 h1 a { color: #333;}
 
 .wrap {
-  width: 90%;
-  max-width: 768px;
+  width: 100%;
+  // max-width: 768px;
   margin: 0 auto;
-  padding: 2.5em 7% 5em 7%;
+  padding: 0;
+  // padding: 2.5em 7% 5em 7%;
 }
 
 .m-0 { margin-top: 0; margin-bottom: 0; }
 .mb {
   margin-bottom: 5em;
+  padding: 1em;
 }
-.mb h1,
-.mb p {
+// .mb h1,
+// .mb p {
 
-}
-.mb p::before {
-  content: "(";
-}
-.mb p::after {
-  content: ")";
-}
+// }
 .post { margin-bottom: 96px; }
 .post img { max-width: 100%; }
 
@@ -88,19 +95,26 @@ h1 a { color: #333;}
   .social-nav {
     position: fixed;
     display: block;
-    left: 1em;
-    top: 50%;
-    transform: translate3d(0, -50%, 0);
+    right: 1em;
+    top: 1em;
+    display: flex;
   }
   .social-nav-item { display: block; }
 }
 .social-nav-item {
   margin-right: 1em;
   transition: all .2s ease-out;
-  color: #333;
+  color: #999;
 }
 .social-nav-item:hover {
-  transform: scale3d(1.5, 1.5, 2);
+  color: #B20D61;
+  transform: scale3d(2, 2, 2);
 }
 .social-nav-item-icon { font-size: 1.5em; }
 .social-nav-item-label { display: none; }
+
+.hero img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
