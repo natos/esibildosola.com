@@ -22,11 +22,15 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 body {
   color: #333;
   font-size: 100%;
-  line-height: 1.75;
   font-family: 'Merriweather', serif;
+  line-height: 1.75;
   min-height: 100%;
   padding-top: 60px;
   background-color: #fefefe;
+}
+
+body * {
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
@@ -219,6 +223,13 @@ h1 a { color: #333;}
   background-color: #14B6CC;
   padding: 5em;
   margin: 100% 0;
+}
+
+.about img {
+  display: block;
+  float: right;
+  width: 33%;
+  margin-left: 2em;
 }
 
 .bug {
