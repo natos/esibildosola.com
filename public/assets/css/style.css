@@ -293,6 +293,7 @@ h1 a { color: #333;}
   background-repeat: no-repeat;
   background-image: url('/assets/images/about/bio-background.jpg');
   background-image: url('/marcelaviola.com.ar/assets/images/about/bio-background.jpg');
+  will-change: transform; // creates a new paint layer
 }
 
 .friends {
@@ -488,6 +489,7 @@ h1 a { color: #333;}
   background-repeat: no-repeat;
   background-image: url('/assets/images/contact/contact-background.jpg');
   background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-background.jpg');
+  will-change: transform; // creates a new paint layer
 }
 .contact a {
   color: #eee;
