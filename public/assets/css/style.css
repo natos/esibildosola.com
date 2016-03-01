@@ -70,6 +70,15 @@ main::before {
   text-align: center;
   font-size: 2em;
 }
+
+main.shows::before,
+main.classes::before,
+main.workshops::before {
+  /* angle-double-down icon */
+  content: "\f103";
+  /* angle-double-down icon end */
+}
+
 main h1:first-of-type {
   padding-top: 2em;
 }
@@ -227,6 +236,11 @@ h1 a { color: #333;}
 .fr { float: right; }
 
 .small time { color: #999; }
+
+/**
+* Navigation
+*/
+
 .nav {
   display: flex;
   font-family: Helvetica, Arial;
@@ -281,6 +295,10 @@ h1 a { color: #333;}
   padding: 0;
 }
 
+/**
+* About
+*/
+
 .about {
   position: relative;
   color: #eee;
@@ -295,6 +313,10 @@ h1 a { color: #333;}
   background-image: url('/marcelaviola.com.ar/assets/images/about/bio-background.jpg');
   will-change: transform; // creates a new paint layer
 }
+
+/**
+* Friends
+*/
 
 .friends {
   position: relative;
@@ -324,6 +346,10 @@ h1 a { color: #333;}
   color: #fff;
 }
 
+/**
+* Shows
+*/
+
 .shows,
 .shows figure {
   margin: 0;
@@ -335,17 +361,127 @@ h1 a { color: #333;}
   background-color: rgba(55, 55, 55, 0.95);
   margin: 43% 0 50%;
 }
-.shows figure img {
-  display: block;
-  width: 100%;
-  width: 1280px;
-}
 .shows h2 {
-  margin-top: 2em;
+  margin-top: 3em;
+}
+.shows h2:first-of-type {
+  margin-top: 0;
+}
+.shows p {
+  margin-bottom: 4em;
 }
 .shows::before {
   color: #eee;
 }
+
+/**
+* Classes
+*/
+
+.classes {
+  padding: 0;
+  padding-top: 1em;
+  margin: 43% 0 50%;
+  color: #eee;
+  background-color: #870A4A;
+  background-color: rgba(135, 10, 74, 0.95);
+  border-bottom: 1em solid #4A0528;
+}
+.classes .hero img {
+  width: 100%;
+}
+
+
+/**
+* Workshops
+*/
+
+.workshops {
+  position: relative;
+  padding: 0;
+  padding-top: 1em;
+  margin: 43% 0 50%;
+  color: #eee;
+  background-color: #507F2B;
+  background-color: rgba(72, 115, 39, .95);
+  border-bottom: 1em solid #2E4A19;
+}
+
+.workshops .hero img {
+  width: 100%;
+}
+
+/**
+* Contact
+*/
+
+.contact {
+  position: relative;
+  color: #eee;
+  border-bottom: 1em solid #055863;
+  background-color: #078191;
+  padding: 5em;
+  padding-right: 50%;
+  // margin: 100% 0 0 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/contact/contact-background.jpg');
+  background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-background.jpg');
+  will-change: transform; // creates a new paint layer
+}
+.contact a {
+  color: #eee;
+}
+.contact a:hover {
+  color: #fff;
+}
+.contact li {
+  list-style: none;
+  vertical-align: top;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+.contact li a {
+vertical-align: top;
+}
+.contact li a i {
+ font-size: 1.5em;
+ margin-right: .5em;
+}
+
+/**
+* Group of images
+*/
+
+.images {
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+.images figure {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+  width: 100%;
+  overflow-y: scroll;
+}
+.images figure img {
+  display: block;
+  width: 100%;
+}
+
+/* images quirks */
+.images.size-1 figure img { width: 100%; }
+.images.size-2 figure img { width: 50%; }
+.images.size-3 figure img { width: 33.3333%; }
+.images.size-4 figure img { width: 25%; }
+.images.size-5 figure img { width: 20%; }
+
+/**
+* Slider
+*/
 
 @keyframes slidy2 {
   0% { transform: translate3d(0, 0, 0); }
@@ -390,11 +526,16 @@ h1 a { color: #333;}
   position: fixed;
   top: 60px;
   bottom: 0; left: 0; right: 0;
+  z-index: -1;
 }
-// .slider figure img { width: 20%; float: left; }
 .slider figure {
-  display: flex;
   position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   margin: 0;
   left: 0;
@@ -404,109 +545,21 @@ h1 a { color: #333;}
   transition-duration: .5s;
   animation: none;
 }
+.slider figure img { height: 100%; }
 .slider.drive-1 figure { width: 100%; animation: none; }
 .slider.drive-1 figure img { width: 100%; }
 .slider.drive-2 figure { width: 200%; }
-.slider.drive-2:hover figure { animation: 20s slidy2 infinite; }
-.slider.drive-2 figure img { width: 100%; }
+.slider.drive-2.animate figure { animation: 20s slidy2 infinite; }
+.slider.drive-2 figure img { width: 50%; }
 .slider.drive-3 figure { width: 300%; }
-.slider.drive-3:hover figure { animation: 30s slidy3 infinite; }
-.slider.drive-3 figure img { width: 100%; }
+.slider.drive-3.animate figure { animation: 30s slidy3 infinite; }
+.slider.drive-3 figure img { width: 33.3332%; }
 .slider.drive-4 figure { width: 400%; }
-.slider.drive-4:hover figure { animation: 40s slidy4 infinite; }
-.slider.drive-4 figure img { width: 100%; }
+.slider.drive-4.animate figure { animation: 40s slidy4 infinite; }
+.slider.drive-4 figure img { width: 25%; }
 .slider.drive-5 figure { width: 500%; }
-.slider.drive-5:hover figure { animation: 50s slidy5 infinite; }
-.slider.drive-5 figure img { width: 33.3332%; }
+.slider.drive-5.animate figure { animation: 50s slidy5 infinite; }
+.slider.drive-5 figure img { width: 20%; }
 .slider.drive-6 figure { width: 600%; }
-.slider.drive-6:hover figure { animation: 60s slidy6 infinite; }
+.slider.drive-6.animate figure { animation: 60s slidy6 infinite; }
 .slider.drive-6 figure img { width: 16.6666%; }
-
-.classes {
-  padding: 0;
-  padding-top: 1em;
-  margin: 43% 0 50%;
-  color: #eee;
-  background-color: #870A4A;
-  background-color: rgba(135, 10, 74, 0.95);
-  border-bottom: 1em solid #4A0528;
-}
-.classes .hero img {
-  width: 100%;
-}
-.classes .images {
-  overflow: hidden;
-  height: 800px;
-  margin-bottom: 2em;
-}
-.classes .images,
-.classes .images figure {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.classes .images figure img {
-  flex: 1;
-  display: block;
-  width: 50%;
-}
-
-.workshops {
-  position: relative;
-  padding: 0;
-  padding-top: 1em;
-  margin: 43% 0 50%;
-  color: #eee;
-  background-color: #507F2B;
-  background-color: rgba(72, 115, 39, .95);
-  border-bottom: 1em solid #2E4A19;
-}
-
-.shows::before,
-.classes::before,
-.workshops::before {
-  /* angle-double-down icon */
-  content: "\f103";
-  /* angle-double-down icon end */
-}
-
-.workshops .hero img {
-  width: 100%;
-}
-
-.contact {
-  position: relative;
-  color: #eee;
-  border-bottom: 1em solid #055863;
-  background-color: #078191;
-  padding: 5em;
-  padding-right: 50%;
-  // margin: 100% 0 0 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-image: url('/assets/images/contact/contact-background.jpg');
-  background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-background.jpg');
-  will-change: transform; // creates a new paint layer
-}
-.contact a {
-  color: #eee;
-}
-.contact a:hover {
-  color: #fff;
-}
-.contact li {
-  list-style: none;
-  vertical-align: top;
-  line-height: 1.5em;
-  margin-bottom: 1em;
-}
-.contact li a {
-vertical-align: top;
-}
-.contact li a i {
- font-size: 1.5em;
- margin-right: .5em;
-}
