@@ -26,27 +26,23 @@ watch = true
 SectionPagesMenu = "main"
 
 [[menu.main]]
-  name = "Shows"
-  identifier = "shows"
-  url = "/shows"
+  weight = 0
+  name = "About"
+  url = "/"
+[[menu.main]]
   weight = 1
+  name = "Shows"
+  url = "/shows/"
 [[menu.main]]
-  name = "Classes"
-  identifier = "classes"
-  url = "/classes"
   weight = 2
+  name = "Classes"
+  url = "/classes/"
 [[menu.main]]
-  name = "Workshops"
-  identifier = "workshops"
-  url = "/workshops"
   weight = 3
+  name = "Workshops"
+  url = "/workshops/"
 [[menu.main]]
-  name = "Blog"
-  identifier = "blog"
-  url = "https://medium.com/@marcelaviola"
-  weight = 4
-[[menu.main]]
-  name = "Contact"
-  identifier = "contact"
-  url = "/contact"
+  pre = "<i class=\"fa fa-envelope-o\"></i>"
   weight = 10
+  name = "Contact"
+  url = "/contact/"

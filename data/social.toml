@@ -19,3 +19,8 @@
   identifier = "vimeo"
   url = "https://vimeo.com/user13778635/videos"
   icon = "fa fa-vimeo-square"
+[links.medium]
+  name = "Medium"
+  identifier = "medium"
+  url = "https://medium.com/@marcelaviola"
+  icon = "fa fa-medium"
