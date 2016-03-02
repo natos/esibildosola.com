@@ -15,7 +15,7 @@ title = "shows"
 
 ## Silks
 
-Usus legentis in iis qui facit: eorum claritatem Investigationes demonstraverunt lectores legere me lius. Ut laoreet dolore magna aliquam erat volutpat ut wisi enim ad minim veniam. Vulputate velit esse molestie consequat vel illum dolore eu feugiat nulla facilisis at vero eros?
+On each aerial silk’s piece Marcela creates a new delicate and complex act that combines dance, acrobatics and choreography while climbing on an approx. 8 meters long  fabric suspended from a fixed point in the ceiling. Marcela takes special care to synchronise stunning moves into the music to catch the audience attention in all their senses. 
 
 {{< images size="3" >}}
 {{% image src="/assets/images/shows/show-silks1.jpg" %}}
@@ -25,7 +25,7 @@ Usus legentis in iis qui facit: eorum claritatem Investigationes demonstraverunt
 
 ## Hoop
 
-Exerci tation ullamcorper suscipit; lobortis nisl ut aliquip ex ea commodo! Eum iriure dolor in hendrerit in vulputate velit esse molestie consequat vel illum dolore! Eodem modo typi qui nunc nobis videntur parum clari fiant sollemnes in? Elit sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
+The aerial hoop or lyra is a ring made of steel hanging from a rigging point on the ceiling. The  circular structure frames the stunning figures that Marcela creates on her choreographies. A display of elegance where flexibility and strength are combined in a dynamic and exciting show.
 
 {{< images size="3" >}}
 {{% image src="/assets/images/shows/show-hoop1.jpg" %}}
@@ -35,7 +35,8 @@ Exerci tation ullamcorper suscipit; lobortis nisl ut aliquip ex ea commodo! Eum 
 
 ## Rope
 
-Quam littera gothica quam nunc putamus parum claram anteposuerit. Eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis. At vero dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend. Me lius quod ii legunt saepius claritas est etiam processus.
+For this piece Marcela combined her years of performing on diverse aerial arts with her training on modern dance and her love for music. 
+The simplicity of the aerial rope suspended from the ceiling gives the opportunity to contemplate the artist’s moves on their most pure element.
 
 {{< images size="1" >}}
 {{% image src="/assets/images/shows/show-rope.jpg" %}}
@@ -43,10 +44,20 @@ Quam littera gothica quam nunc putamus parum claram anteposuerit. Eros et accums
 
 ## Straps
 
-Decima eodem modo typi qui nunc nobis videntur parum clari fiant. Accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te. Facilisi nam liber tempor cum soluta nobis eleifend. Imperdiet doming id quod mazim placerat facer possim assum typi? Aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit, in vulputate velit. Nisl ut esse molestie consequat vel illum dolore eu feugiat. Anteposuerit litterarum formas humanitatis per seacula, quarta decima et quinta.
+A strong  act that captivates the audience. Marcela’s high energy and the dynamics of the aerial straps merged in a powerful show perfect to bring the WOW factor to your event.
 
 {{< images size="3" >}}
 {{% image src="/assets/images/shows/show-straps1.jpg" %}}
 {{% image src="/assets/images/shows/show-straps2.jpg" %}}
 {{% image src="/assets/images/shows/show-straps3.jpg" %}}
 {{< /images >}}
+
+## Technical
+
+Duration: approx. 5 minutes.
+
+Silks/Rope: minimum 6 meters height, 3x3meters floor space and rigging point holding up to 600 kilos. Accessibility to the rigging point (ladder, cherry lift). Sound and lights systems.
+
+Hoop/Straps: minimum 4 meters height, 4x4 meters floor space and rigging point holding up to 600 kilos. Accessibility to the rigging point (ladder, cherry lift). Sound and lights systems.
+
+Personal: Dressing room with place for warming up. A mirror. Water and catering.

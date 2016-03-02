@@ -42,7 +42,6 @@ SectionPagesMenu = "main"
   name = "Workshops"
   url = "/workshops/"
 [[menu.main]]
-  pre = "<i class=\"fa fa-envelope-o\"></i>"
   weight = 10
   name = "Contact"
   url = "/contact/"

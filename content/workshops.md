@@ -10,20 +10,23 @@ title = "workshops"
 
 # Workshops
 
-Mazim placerat facer possim assum typi non habent claritatem insitam est usus legentis in iis. Claritatem Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas est etiam.
-
-Exerci tation ullamcorper suscipit; lobortis nisl ut aliquip ex ea commodo! Eum iriure dolor in hendrerit in vulputate velit esse molestie consequat vel illum dolore! Eodem modo typi qui nunc nobis videntur parum clari fiant sollemnes in? Elit sed diam nonummy nibh euismod tincidunt ut laoreet dolore.
+Marcela gives intensive weekend workshops once a month. With a wide range of themes from aerial technique to flexibility development, the intensive workshops are 2 to 3 hours long. The extra time gives the posiblity to go deeper into the choosen theme and a maximun of 10 students ensures the personal observation and focus on their particular needs.
+Attention to detail and tailored guidance are Marcela's signature.
 
 {{< images size="2" >}}
 {{% image src="/assets/images/workshops/workshops1.jpg" %}}
 {{% image src="/assets/images/workshops/workshops2.jpg" %}}
 {{< /images >}}
 
-Decima eodem modo typi qui nunc nobis videntur parum clari fiant. Accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te. Facilisi nam liber tempor cum soluta nobis eleifend. Imperdiet doming id quod mazim placerat facer possim assum typi? Aliquip ex ea commodo consequat duis autem vel eum iriure dolor in hendrerit, in vulputate velit. Nisl ut esse molestie consequat vel illum dolore eu feugiat. Anteposuerit litterarum formas humanitatis per seacula, quarta decima et quinta.
+Are you interested on a private workshop? 
+If you want to offer profesional coaching to your students and expand the workshops from your own studio Marcela is available to travel and bring her years of experience to your classroom.
+Get in touch (LINK TO CONTACT)
 
 {{< images size="2" >}}
 {{% image src="/assets/images/workshops/workshops3.jpg" %}}
 {{% image src="/assets/images/workshops/workshops4.jpg" %}}
 {{< /images >}}
 
-Ad minim veniam quis nostrud exerci tation ullamcorper suscipit? At vero eros et accumsan et iusto odio.
+A different birthday or bachelorette party?
+Why not trying a fun a envigorating sport together with your friends! Marcela is happy to prepare a special class according to your personal wishes. No preview experience needed.
+Send your request (LINK TO CONTACT)

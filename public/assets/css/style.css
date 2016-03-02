@@ -367,9 +367,13 @@ h1 a { color: #333;}
 .shows h2:first-of-type {
   margin-top: 0;
 }
-.shows p {
+.shows p:last-of-type {
   margin-bottom: 4em;
 }
+.shows p ~ p {
+  margin-bottom: .25em;
+}
+
 .shows::before {
   color: #eee;
 }
