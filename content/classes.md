@@ -9,19 +9,49 @@ title = "classes"
 {{< /hero >}}
 
 # Classes
+## Aerial silks and hoop weekly classes
 
-Claritatem insitam est usus legentis in iis qui facit eorum claritatem Investigationes demonstraverunt. Quarta decima et quinta, decima eodem modo typi qui. Lobortis nisl ut aliquip ex ea commodo consequat duis. Sit amet consectetuer adipiscing elit sed diam nonummy nibh. Dolor in hendrerit in, vulputate velit esse molestie consequat vel illum dolore eu feugiat nulla. Me lius quod ii legunt saepius claritas; est etiam processus dynamicus qui sequitur mutationem consuetudium.
-
-{{< images size="2" >}}
-{{% image src="/assets/images/classes/classes1.jpg" %}}
-{{% image src="/assets/images/classes/classes2.jpg" %}}
-{{< /images >}}
-
-Eum iriure dolor in hendrerit in vulputate velit esse molestie consequat vel! Non habent claritatem insitam est usus legentis in iis qui facit. Imperdiet doming id quod mazim placerat facer possim assum, typi eorum claritatem Investigationes. 
+Aerial training for beginners and intermediate.
+The class presents a warm up based in yoga to achieve concentration, body awareness and greater active flexibility. Later, in the aerial elements, the specific technique, conditioning, performance and creativity are developed by combining the qualities of both disciplines.
+The class ends with stretching and relaxation exercises.
 
 {{< images size="2" >}}
 {{% image src="/assets/images/classes/classes3.jpg" %}}
 {{% image src="/assets/images/classes/classes4.jpg" %}}
 {{< /images >}}
 
-Qui blandit praesent luptatum zzril delenit augue duis dolore te feugait?
+## Yoga classes
+
+Marcela finished her yoga Purna Yoga teacher's training at the International Yoga Federation in Argentina back in 2011 and before that, she also studied Iyengar Yoga. Ever since she's also studied Okido yoga, Acro yoga, she loves to be a student and to practice Vinyasa on a regular basis.
+This wide range of knowledge gives Marcela the tools to adapt the class to each student.
+Marcela teaches weekly classes of Artistic Yoga at Pole Dance Factory Amsterdam on Fridays afternoon. She is also available for private classes and group classes on demand.
+
+{{< images size="2" >}}
+{{% image src="/assets/images/classes/classes_yoga.jpg" %}}
+
+{{< /images >}}
+
+## Flexibility classes 
+
+Flexibility is important in everybody's life, it helps to keep you movable, increase the range of motion and prevent injuries.
+The class begins with a warm-up based on yoga and dance elements. Then we move on to work on your personal flexibility needs and goals.
+I focus on your alignment, posture corrections, and fine details. We use yoga props to help you find space and stability in each position and to increase the range of motion.
+The program includes basic contortion coaching, flexibility for aerialist and therapeutic approach to recover from and to prevent injuries.
+Also indicated for nonacrobats and office workers. All levels welcome, no preview experience or flexibility level are necessary.
+For groups check (LINK WORKSHOPS)
+
+{{< images size="2" >}}
+{{% image src="/assets/images/classes/classes_f5.jpg" %}}
+{{% image src="/assets/images/classes/classes_f6.jpg" %}}
+{{< /images >}}
+
+##Private classes
+
+Aerial, yoga and flexibility classes one on one, just you and the teacher. Classes are scheduled on demand, different locations available in Amsterdam.
+Marcela also comes to your house or studio. Contact me to get a quote.
+For groups check (LINK WORKSHOPS)
+
+{{< images size="2" >}}
+{{% image src="/assets/images/classes/classes1.jpg" %}}
+{{% image src="/assets/images/classes/classes7.jpg" %}}
+{{< /images >}}
