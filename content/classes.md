@@ -26,9 +26,8 @@ Marcela finished her yoga Purna Yoga teacher's training at the International Yog
 This wide range of knowledge gives Marcela the tools to adapt the class to each student.
 Marcela teaches weekly classes of Artistic Yoga at Pole Dance Factory Amsterdam on Fridays afternoon. She is also available for private classes and group classes on demand.
 
-{{< images size="2" >}}
-{{% image src="/assets/images/classes/classes_yoga.jpg" %}}
-
+{{< images size="1" >}}
+{{% image src="/assets/images/classes/classes-yoga.jpg" %}}
 {{< /images >}}
 
 ## Flexibility classes 
@@ -41,11 +40,11 @@ Also indicated for nonacrobats and office workers. All levels welcome, no previe
 For groups check (LINK WORKSHOPS)
 
 {{< images size="2" >}}
-{{% image src="/assets/images/classes/classes_f5.jpg" %}}
-{{% image src="/assets/images/classes/classes_f6.jpg" %}}
+{{% image src="/assets/images/classes/classes-f5.jpg" %}}
+{{% image src="/assets/images/classes/classes-f6.jpg" %}}
 {{< /images >}}
 
-##Private classes
+## Private classes
 
 Aerial, yoga and flexibility classes one on one, just you and the teacher. Classes are scheduled on demand, different locations available in Amsterdam.
 Marcela also comes to your house or studio. Contact me to get a quote.
