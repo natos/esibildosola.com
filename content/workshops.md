@@ -30,4 +30,4 @@ If you want to offer profesional coaching to your students and expand the worksh
 
 ## A different birthday or bachelorette party?
 Why not trying a fun a envigorating sport together with your friends! Marcela is happy to prepare a special class according to your personal wishes. No preview experience needed. 
-[Send your inquiry](/contact)
+[Send your inquiry](mailto:marcela.aerialist@gmail.com?subject=Contact%20from%20your%20website)

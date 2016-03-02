@@ -13,9 +13,7 @@ It's easy to get in contact with me [{{< icon envelope >}} by email](mailto:marc
 You can also follow my updates on:
 
 * {{< social-link label="facebook" icon="facebook-square" href="https://www.facebook.com/MarcelaViola.Aerialist" >}}
-
 * {{< social-link label="instagram" icon="instagram" href="https://www.instagram.com/pulgacion/" >}}
-
 * {{< social-link label="medium" icon="medium" href="https://medium.com/@marcelaviola/" >}}
 * {{< social-link label="twitter" icon="twitter-square" href="https://twitter.com/PulgaMimetica" >}}
-* {{< social-link label="Vimeo" icon="vimeo-square" href="https://vimeo.com/user13778635/videos" >}}
+* {{< social-link label="vimeo" icon="vimeo-square" href="https://vimeo.com/user13778635/videos" >}}
