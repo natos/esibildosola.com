@@ -35,12 +35,18 @@ body * {
 
 h1, h2, h3, h4, h5, h6 { line-height: 1.25; }
 h1, .h1 {
-  font-size: 32px;
-  margin-bottom: 32px;
+  font-size: 36px;
+  margin-bottom: 36px;
 }
-h2, .h2, h3, .h3, h4, h5, h6 {
-  font-size: 24px;
+h2, .h2 {
+  font-size: 32px;
   margin-bottom: 16px;
+}
+h3, .h3 {
+  font-size: 28px;
+}
+h4, h5, h6 {
+  font-size: 21px;
 }
 p, .p {
   font-size: 18px;
@@ -50,10 +56,12 @@ small, .small { font-size: 16px; }
 main {
   position: relative;
   padding: 2em 0;
+  margin: 43% 0 50%;
 }
 main::before {
-  /* icon */
-  /* content: "\f103"; */
+  /* angle-double-down icon */
+  content: "\f103";
+  /* angle-double-down icon end */
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -71,19 +79,21 @@ main::before {
   font-size: 2em;
 }
 
+/*
 main.shows::before,
 main.classes::before,
-main.workshops::before {
-  /* angle-double-down icon */
-  content: "\f103";
-  /* angle-double-down icon end */
-}
+main.workshops::before {}
+*/
 
 main h1:first-of-type {
   padding-top: 2em;
 }
 main h1,
 main h2,
+main h3,
+main h4,
+main h5,
+main h6,
 main p  {
   padding: 1% 5%;
 }
@@ -134,12 +144,6 @@ footer a:hover {
   color: #000;
 }
 
-@media screen and (min-width: 640px) {
-  h1, .h1 { font-size: 48px; }
-  h2, .h2 { font-size: 32px; }
-  p, .p   { font-size: 20px; }
-}
-
 a {
   color: #333;
   text-decoration: none;
@@ -162,9 +166,7 @@ h1 a { color: #333;}
   position: absolute;
   line-height: 1em;
   left: 50%; top: 10px;
-  opacity: .8;
-  // width: 439px;
-  // height: 272px;
+  opacity: .9;
   width: 439px;
   height: 198px;
   background-size: cover;
@@ -298,7 +300,15 @@ h1 a { color: #333;}
 /**
 * About
 */
-
+.Marcela.Viola {
+  border-top: 4em solid #222;
+  border-bottom: 1em solid #333;
+  background-color: #000;
+  padding: 0;
+}
+.Marcela.Viola::before {
+  top: -1em;
+}
 .about {
   position: relative;
   color: #eee;
@@ -306,7 +316,6 @@ h1 a { color: #333;}
   background-color: #000;
   padding: 5em;
   padding-right: 50%;
-  margin: 50% 0 0 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('/assets/images/about/bio-background.jpg');
@@ -321,10 +330,10 @@ h1 a { color: #333;}
 .friends {
   position: relative;
   color: #eee;
+  border-top: 1em solid #078191;
   border-bottom: 1em solid #078191;
   background-color: #14B6CC;
   padding: 5em;
-  margin: 0 0 50% 0;
   text-align: center;
 }
 .friends .links {
@@ -350,7 +359,6 @@ h1 a { color: #333;}
 * Shows
 */
 
-.shows,
 .shows figure {
   margin: 0;
   padding: 0;
@@ -359,7 +367,6 @@ h1 a { color: #333;}
   color: #eee;
   background-color: #efefef;
   background-color: rgba(55, 55, 55, 0.95);
-  margin: 43% 0 50%;
 }
 .shows h2 {
   margin-top: 3em;
@@ -424,15 +431,19 @@ h1 a { color: #333;}
   color: #eee;
   border-bottom: 1em solid #055863;
   background-color: #078191;
+  margin: 0;
   padding: 5em;
   padding-right: 50%;
-  // margin: 100% 0 0 0;
+  min-height: 900px;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: url('/assets/images/contact/contact-background.jpg');
   background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-background.jpg');
   will-change: transform; // creates a new paint layer
+}
+.contact::before {
+  content: "";
 }
 .contact a {
   color: #eee;
@@ -460,7 +471,7 @@ vertical-align: top;
 
 .images {
   overflow: hidden;
-  margin-bottom: 2em;
+  margin: 2em 0;
 }
 .images figure {
   display: flex;
@@ -547,22 +558,23 @@ vertical-align: top;
   transform: translate3d(0, 0, 0);
   transition-duration: .5s;
   animation: none;
+  animation-delay: 3s;
 }
 .slider figure img { height: 100%; }
 .slider.drive-1 figure { width: 100%; animation: none; }
 .slider.drive-1 figure img { width: 100%; }
 .slider.drive-2 figure { width: 200%; }
-.slider.drive-2.animate figure { animation: 20s slidy2 infinite; }
+.slider.drive-2.animate figure { animation: 20s slidy2 ease-in-out infinite; }
 .slider.drive-2 figure img { width: 50%; }
 .slider.drive-3 figure { width: 300%; }
-.slider.drive-3.animate figure { animation: 30s slidy3 infinite; }
+.slider.drive-3.animate figure { animation: 30s slidy3 ease-in-out infinite; }
 .slider.drive-3 figure img { width: 33.3332%; }
 .slider.drive-4 figure { width: 400%; }
-.slider.drive-4.animate figure { animation: 40s slidy4 infinite; }
+.slider.drive-4.animate figure { animation: 40s slidy4 ease-in-out infinite; }
 .slider.drive-4 figure img { width: 25%; }
 .slider.drive-5 figure { width: 500%; }
-.slider.drive-5.animate figure { animation: 50s slidy5 infinite; }
+.slider.drive-5.animate figure { animation: 50s slidy5 ease-in-out infinite; }
 .slider.drive-5 figure img { width: 20%; }
 .slider.drive-6 figure { width: 600%; }
-.slider.drive-6.animate figure { animation: 60s slidy6 infinite; }
+.slider.drive-6.animate figure { animation: 60s slidy6 ease-in-out infinite; }
 .slider.drive-6 figure img { width: 16.6666%; }

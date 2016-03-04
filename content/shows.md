@@ -52,12 +52,14 @@ A strong  act that captivates the audience. Marcela’s high energy and the dyna
 {{% image src="/assets/images/shows/show-straps3.jpg" %}}
 {{< /images >}}
 
-## Technical
+### Technical
 
 Duration: approx. 5 minutes.
 
-Silks/Rope: minimum 6 meters height, 3x3meters floor space and rigging point holding up to 600 kilos. Accessibility to the rigging point (ladder, cherry lift). Sound and lights systems.
+#### Silks/Rope
+Minimum 6 meters height, 3x3meters floor space and rigging point holding up to 600 kilos. Accessibility to the rigging point (ladder, cherry lift). Sound and lights systems.
 
-Hoop/Straps: minimum 4 meters height, 4x4 meters floor space and rigging point holding up to 600 kilos. Accessibility to the rigging point (ladder, cherry lift). Sound and lights systems.
+#### Hoop/Straps
+Minimum 4 meters height, 4x4 meters floor space and rigging point holding up to 600 kilos. Accessibility to the rigging point (ladder, cherry lift). Sound and lights systems.
 
 Personal: Dressing room with place for warming up. A mirror. Water and catering.

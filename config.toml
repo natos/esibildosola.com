@@ -12,6 +12,12 @@ relativeurls = false
 canonifyurls = true
 watch = true
 
+[blackfriday]
+  angledQuotes = true
+  fractions = false
+  plainIDAnchors = true
+  extensions = ["hardLineBreak"]
+
 [author]
   name = "Natan Santolo"
 
@@ -21,7 +27,6 @@ watch = true
 [taxonomies]
   category = "categories"
   tag = "tags"
-
 
 SectionPagesMenu = "main"
 

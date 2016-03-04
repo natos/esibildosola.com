@@ -15,10 +15,10 @@ Aerial training for beginners and intermediate.
 The class presents a warm up based in yoga to achieve concentration, body awareness and greater active flexibility. Later, in the aerial elements, the specific technique, conditioning, performance and creativity are developed by combining the qualities of both disciplines.
 The class ends with stretching and relaxation exercises.
 
-## Book a class
+### Book a class
 
 Tuesday and Thursday form 19 till 20.30hs. Address: Schipuidenlaan 18 Amsterdam
-// Friday from 19 till 20.30. Address: Daniel Goedkoopstraat 16 1096 BD Amsterdam
+Friday from 19 till 20.30. Address: Daniel Goedkoopstraat 16 1096 BD Amsterdam
 
 €15 x class buying a minimun of 2 classes. €18 x loose class.
 [Sign in advance is required ](mailto:marcela.aerialist@gmail.com?subject=Contact%20from%20your%20website)
