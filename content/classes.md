@@ -30,9 +30,9 @@ Friday from 19 till 20.30. Address: Daniel Goedkoopstraat 16 1096 BD Amsterdam
 
 ## Yoga classes
 
-Marcela finished her yoga Purna Yoga teacher's training at the International Yoga Federation in Argentina back in 2011 and before that, she also studied Iyengar Yoga. Ever since she's also studied Okido yoga, Acro yoga, she loves to be a student and to practice Vinyasa on a regular basis.
-This wide range of knowledge gives Marcela the tools to adapt the class to each student.
-Marcela teaches weekly classes of Artistic Yoga at Pole Dance Factory Amsterdam on Fridays afternoon. She is also available for private classes and group classes on demand. [Get in touch](/contact)
+Back in 2011, I finished my yoga Purna Yoga teacher's training at the International Yoga Federation in Argentina in Buenos Aires and before that, I also studied Iyengar Yoga. Later on, I followed a few Acro yoga workshops in Argentina and Amsterdam and I also did some study over Okido yoga, acupressure and massage. I'm an active yoga practitioner and I love to be a student and to practice Vinyasa on a regular basis.
+This wide range of knowledge gives me the tools to adapt the class to each student.
+I currently teach weekly classes of Artistic Yoga at Pole Dance Factory Amsterdam on Fridays afternoon. I'm also available for private classes and group classes on demand. [Get in touch](/contact)
 
 {{< images size="1" >}}
 {{% image src="/assets/images/classes/classes-yoga.jpg" %}}
@@ -55,10 +55,10 @@ For groups check [workshops.](/workshops)
 ## Private classes
 
 Aerial, yoga and flexibility classes one on one, just you and the teacher. Classes are scheduled on demand, different locations available in Amsterdam.
-Marcela also comes to your house or studio. [Contact me to get a quote.](mailto:marcela.aerialist@gmail.com?subject=Contact%20from%20your%20website)
+I can also come to your house or studio. [Contact me to get a quote.](mailto:marcela.aerialist@gmail.com?subject=Contact%20from%20your%20website)
 For groups check [workshops.](/workshops)
-
 {{< images size="2" >}}
 {{% image src="/assets/images/classes/classes1.jpg" %}}
 {{% image src="/assets/images/classes/classes7.jpg" %}}
 {{< /images >}}
+{{< content-footer >}}Keep Flying!{{< /content-footer >}}

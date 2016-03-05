@@ -1,1 +1,4 @@
-<a href="{{ .Get "href" }}" target="_blank"><i class="fa fa-{{ .Get "icon" }}"></i>{{ .Get "label" }}</a>
+<a class="social-link" href="{{ .Get "href" }}" target="_blank">
+	<span class="social-link-icon"><i class="fa fa-{{ .Get "icon" }}"></i></span>
+	<span class="social-link-label">{{ .Get "label" }}</span>
+</a>
