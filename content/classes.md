@@ -17,10 +17,10 @@ The class ends with stretching and relaxation exercises.
 
 ### Book a class
 
-Tuesday and Thursday form 19 till 20.30hs. Address: Schipuidenlaan 18 Amsterdam
-Friday from 19 till 20.30. Address: Daniel Goedkoopstraat 16 1096 BD Amsterdam
-
-€15 x class buying a minimun of 2 classes. €18 x loose class.
+- Tuesday and Thursday: 7 - 8.30pm at Olympia Circus, address: Schipuidenlaan 18, 1062HE - Amsterdam.
+- Friday: 7 - 8.30pm at {{< target-blank "Pole Dance Factoty" "http://www.pdfamsterdam.com" >}}, address: Daniel Goedkoopstraat 16, 1096BD - Amsterdam.
+€15 x class buying a minimun of 2 classes. 
+€18 x loose class.
 [Sign in advance is required ](mailto:marcela.aerialist@gmail.com?subject=Contact%20from%20your%20website)
 
 {{< images size="2" >}}
