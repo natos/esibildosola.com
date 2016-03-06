@@ -4,12 +4,12 @@ title = "shows"
 
 +++
 
-{{< hero-slider size="4" >}}
+{{< hero-fader size="4" >}}
 {{% image src="/assets/images/shows/hero1.jpg" %}}
 {{% image src="/assets/images/shows/hero2.jpg" %}}
 {{% image src="/assets/images/shows/hero3.jpg" %}}
 {{% image src="/assets/images/shows/hero4.jpg" %}}
-{{< /hero-slider >}}
+{{< /hero-fader >}}
 
 # Shows
 

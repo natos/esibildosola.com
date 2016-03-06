@@ -1,8 +1,8 @@
 {{ $len := len $.Site.Data.home.hero}}
-<div class="hero-slider slider drive-{{ $len }} animate">
+<div class="hero fader fade-{{ $len }} animate">
     <figure>
-        {{ range $.Site.Data.home.hero }}
-              <img src="{{ . }}">
+        {{ range $i, $.Site.Data.home.hero }}
+              <img src="{{ . }}" alte="{{ $i }}">
         {{ end }}
     </figure>
 </div>
