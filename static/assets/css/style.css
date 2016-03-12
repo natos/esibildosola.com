@@ -470,6 +470,7 @@ nav.social {
   padding: 0;
   height: 100%;
   width: auto;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 810px) {
