@@ -11,11 +11,9 @@ title = "shows"
 {{% image src="/assets/images/shows/hero4.jpg" %}}
 {{< /hero-fader >}}
 
-# Shows
-
 ## Silks
 
-On each aerial silk’s piece I create a new delicate and complex act that combines dance, acrobatics and choreography while climbing on an approx. 8 meters long  fabric suspended from a fixed point in the ceiling. I take special care to synchronise stunning moves into the music to catch the audience attention in all their senses. 
+On each aerial silk’s piece I create a new delicate and complex act that combines dance, acrobatics and choreography while climbing on an approx. 8 meters long  fabric suspended from a fixed point in the ceiling. I take special care to synchronise stunning moves into the music to catch the audience attention in all their senses.
 
 {{< images size="3" >}}
 {{% image src="/assets/images/shows/show-silks1.jpg" %}}
@@ -35,7 +33,7 @@ The aerial hoop or lyra is a ring made of steel hanging from a rigging point on 
 
 ## Rope
 
-For this piece I combined many years of performing on diverse aerial arts with my training on modern dance and my love for music. 
+For this piece I combined many years of performing on diverse aerial arts with my training on modern dance and my love for music.
 The simplicity of the aerial rope suspended from the ceiling gives the opportunity to contemplate the artist’s moves on their most pure element.
 
 {{< images size="1" >}}

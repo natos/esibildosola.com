@@ -8,7 +8,6 @@ title = "classes"
 {{% image src="/assets/images/classes/classes-hero.jpg" %}}
 {{< /hero >}}
 
-# Classes
 ## Aerial silks and hoop weekly classes
 
 Aerial training for beginners and intermediate.

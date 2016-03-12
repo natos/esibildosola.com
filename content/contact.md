@@ -1,7 +1,6 @@
 +++
 date = "2016-02-27T23:28:53+01:00"
 title = "contact"
-
 +++
 
 # Contact

@@ -30,7 +30,7 @@ h2, {
   font-size: 32px;
   margin-bottom: 16px;
 }
-h3, { font-size: 28px; }
+h3 { font-size: 28px; }
 h4, h5, h6 { font-size: 21px; }
 li {
   margin-left: 1em;
@@ -40,39 +40,88 @@ p, {
   margin-bottom: 32px;
 }
 small, .small { font-size: 16px; }
-.layout {
-  width: 100%;
-}
+.layout { width: 100%; }
 .page {
   position: relative;
   padding: 0;
   margin: 0 auto;
 }
-.page.layout > section:first-of-type {
+
+.page > section:first-of-type {
   position: relative;
   padding: 0;
-  padding-top: 1em;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
   margin: 80% 0 90%;
   color: #eee;
 }
+.page.layout > section:first-of-type.about { margin-bottom: 0; }
+.page.layout section.friends { margin-bottom: 90%; }
+.page.layout > section h1,
+.page.layout > section h2,
+.page.layout > section h3,
+.page.layout > section h4,
+.page.layout > section h5,
+.page.layout > section h6,
+.page.layout > section ul,
+.page.layout > section ol,
+.page.layout > section p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.page.layout > section ul,
+.page.layout > section ol,
+.page.layout > section dl { padding-left: 2.5rem; }
 /* ----------- iPhone 5 and 5S ----------- */
 
 /* Portrait and Landscape */
 @media only screen
   and (max-device-width: 320px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .page.layout > section:first-of-type {
-      margin: 90% 0 100%;
-    }
+    .page.layout > section:first-of-type { margin: 90% 0 100%; }
+    .page.layout > section:first-of-type.about { margin-bottom: 0; }
+    .page.layout section.friends { margin-bottom: 90%; }
 }
 @media screen and (min-width: 810px) {
-  .page.layout > section:first-of-type {
-        margin: 50% 0;
+  .page.layout > section:first-of-type { margin: 50% 0; }
+  .page.layout > section:first-of-type.about { margin-bottom: 0; }
+  .page.layout section.friends { margin-bottom: 50%; }
+}
+@media screen and (min-width: 760px) {
+  .page.layout > section h1,
+  .page.layout > section h2,
+  .page.layout > section h3,
+  .page.layout > section h4,
+  .page.layout > section h5,
+  .page.layout > section h6,
+  .page.layout > section ul,
+  .page.layout > section ol,
+  .page.layout > section p {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
+  .page.layout > section ul,
+  .page.layout > section ol,
+  .page.layout > section dl { padding-left: 5rem; }
 }
 @media screen and (min-width: 1024px) {
-  .page.layout > section:first-of-type {
-        margin: 40% 0;
+  .page.layout > section:first-of-type { margin: 40% 0; }
+  .page.layout > section h1,
+  .page.layout > section h2,
+  .page.layout > section h3,
+  .page.layout > section h4,
+  .page.layout > section h5,
+  .page.layout > section h6,
+  .page.layout > section ul,
+  .page.layout > section ol,
+  .page.layout > section p {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .page.layout > section ul,
+  .page.layout > section ol,
+  .page.layout > section dl {
+    padding-left: 7rem;
   }
 }
 
@@ -118,17 +167,14 @@ small, .small { font-size: 16px; }
   }
 }
 
-/*
-page.shows::before,
-page.classes::before,
-page.workshops::before {}
-*/
+h1, h2, h3, h4, h5, h6 { padding: .5 0 1em; }
 
-h1:first-of-type {
-  padding-top: 2em;
-}
-h1, h2, h3, h4, h5, h6, p , ul { padding: 1% 5%; }
-p { padding: 1% 5% 3%; }
+/* paragraph */
+p { padding: .5em 0; }
+
+/* lists */
+ul, ol, dl { padding: 1.5em 0; }
+
 article > p:last-of-type { margin-bottom: 3em; }
 figure {
   margin: 0;
@@ -226,9 +272,17 @@ header.global p { display: none; }
 @media screen and (min-width: 760px) {
   header.global {
     padding: 1em;
+    height: 5rem;
+    position: fixed;
+    z-index: 1000;
   }
-}
 
+}
+/* logo */
+@keyframes showdown {
+  0% { transform: translate3d(-50%, -40%, 0) scale(.25); }
+  100% { transform: translate3d(-50%, -30%, 0) scale(.5); }
+}
 .mv {
   position: absolute;
   line-height: 1em;
@@ -252,13 +306,22 @@ header.global p { display: none; }
   /*background-image: url('/assets/images/logo-horizontal.png');*/
   background-image: url('/marcelaviola.com.ar/assets/images/logo-horizontal.png');
   transform: translate3d(-50%, -40%, 0) scale(.25);
-  transition: all .1s ease-in-out;
 }
-.mv a:hover::after {
-  transform: translate3d(-50%, -30%, 0) scale(.5);
-  opacity: 1;
+@media screen and (min-width: 760px) {
+  .mv { display: none; }
 }
-
+@media screen and (min-width: 1024px) {
+  .mv { display: block; }
+  .mv a::after {
+    transform: translate3d(-50%, -30%, 0) scale(.45);
+    transition: all .5s ease-out;
+    animation: showdown 1s 1;
+  }
+  .mv a:hover::after {
+    transform: translate3d(-50%, -29%, 0) scale(.46);
+    opacity: 1;
+  }
+}
 /**
 * Navigation
 */
@@ -280,13 +343,15 @@ nav.global {
   margin-bottom: 1px;
   text-align: center;
 }
+.nav-item:first-of-type {
+  display: none;
+}
 .nav-item:hover {
   color: #fff;
   transform: scale(1.2);
   background-color: rgba(255, 255, 255, 0.5);
-
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
   nav.global {
     justify-content: flex-start;
   }
@@ -296,7 +361,7 @@ nav.global {
     padding: .5em 1em;
   }
   .nav-item:first-of-type {
-    display: none;
+    display: inherit;
   }
 }
 nav.social {
@@ -317,7 +382,7 @@ nav.social {
 }
 .social-item-icon { font-size: 1.5em; }
 .social-item-label { display: none; }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
   nav.social {
     position: absolute;
     display: block;
@@ -401,17 +466,16 @@ nav.social {
 }
 .hero img {
   display: block;
-  width: auto;
   margin: 0;
   padding: 0;
-  max-height: 100%;
-  transform: translate3d(-25%, 0, 0);
+  height: 100%;
+  width: auto;
 }
 
 @media screen and (min-width: 810px) {
   .hero img {
     height: auto;
-    max-height: none;
+    min-height: none;
     width: 100%;
     transform: translate3d(0,0,0);
   }
@@ -434,40 +498,36 @@ nav.social {
   top: -1em;
 }
 .about {
-  position: relative;
   color: #eee;
   border-bottom: 1em solid #333;
   background-color: #000;
-  padding: 3em 1em;
-  background-size: 100%;
-  background-position: -50% 0;
-  background-repeat: no-repeat;
-  /*
-  background-image: url('/assets/images/about/bio-background.jpg');
-  background-image: url('/marcelaviola.com.ar/assets/images/about/bio-background.jpg');
-  */
-  will-change: transform; // creates a new paint layer
+  /*padding: 3em 1em;*/
 }
 .about img {
   max-width: 100%;
-  min-height: 100%;
 }
 .about a { color: #078191; }
 .about a:hover { color: #14B6CC; }
 
+.bio {}
+
 @media screen and (min-width: 1024px) {
-  .about {
-    padding: 5em;
+
+  .page.layout .bio {
     padding-right: 50%;
-    min-height: 900px;
   }
-  .about img {
-    width: 50%;
-    height: inherit;
-    min-height: inherit;
-    position: absolute;
-    top: 0:
-    right: 0;
+  .bio {
+    min-height: 750px;
+    background-size: 100%;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    /*
+    background-image: url('/assets/images/about/bio-background.jpg');
+    */
+    background-image: url('/marcelaviola.com.ar/assets/images/about/bio-background.jpg');
+  }
+  .bio > figure {
+    display: none;
   }
 }
 /**
@@ -475,7 +535,6 @@ nav.social {
 */
 
 .friends {
-  position: relative;
   color: #eee;
   border-top: 1em solid #078191;
   border-bottom: 1em solid #078191;
@@ -518,10 +577,6 @@ nav.social {
   background-color: #efefef;
   background-color: rgba(55, 55, 55, 0.95);
 }
-.shows h2 { margin-top: 3em; }
-.shows h2:first-of-type { margin-top: 0; }
-.shows p:last-of-type { margin-bottom: 4em; }
-.shows p ~ p { margin-bottom: .25em; }
 
 .shows::before { color: #eee; }
 
@@ -559,7 +614,6 @@ nav.social {
 .page.layout > section.contact { margin: 0; }
 .page.layout > section.contact::before { display: none; }
 .contact {
-  position: relative;
   color: #eee;
   border-bottom: 1em solid #055863;
   background-color: #078191;
