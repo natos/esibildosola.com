@@ -11,7 +11,14 @@ title = "shows"
 {{% image src="/assets/images/shows/hero4.jpg" %}}
 {{< /hero-fader >}}
 
-## Silks
+## Shows
+{{< smooth-link label="Silks" href="#silks" >}}
+{{< smooth-link label="Hoop" href="#hoop" >}}
+{{< smooth-link label="Rope" href="#rope" >}}
+{{< smooth-link label="Straps" href="#straps" >}}
+{{< smooth-link label="Technical" href="#technical" >}}
+
+### Silks
 
 On each aerial silk’s piece I create a new delicate and complex act that combines dance, acrobatics and choreography while climbing on an approx. 8 meters long  fabric suspended from a fixed point in the ceiling. I take special care to synchronise stunning moves into the music to catch the audience attention in all their senses.
 
@@ -21,7 +28,7 @@ On each aerial silk’s piece I create a new delicate and complex act that combi
 {{% image src="/assets/images/shows/show-silks3.jpg" %}}
 {{< /images >}}
 
-## Hoop
+### Hoop
 
 The aerial hoop or lyra is a ring made of steel hanging from a rigging point on the ceiling. The  circular structure frames the stunning figures that I create on my choreographies. A display of elegance where flexibility and strength are combined in a dynamic and exciting show.
 
@@ -31,7 +38,7 @@ The aerial hoop or lyra is a ring made of steel hanging from a rigging point on 
 {{% image src="/assets/images/shows/show-hoop3.jpg" %}}
 {{< /images >}}
 
-## Rope
+### Rope
 
 For this piece I combined many years of performing on diverse aerial arts with my training on modern dance and my love for music.
 The simplicity of the aerial rope suspended from the ceiling gives the opportunity to contemplate the artist’s moves on their most pure element.
@@ -40,7 +47,7 @@ The simplicity of the aerial rope suspended from the ceiling gives the opportuni
 {{% image src="/assets/images/shows/show-rope.jpg" %}}
 {{< /images >}}
 
-## Straps
+### Straps
 
 A strong  act that captivates the audience. The high energy and the dynamics of the aerial straps merged in a powerful show perfect to bring the WOW factor to your event.
 
@@ -50,7 +57,7 @@ A strong  act that captivates the audience. The high energy and the dynamics of 
 {{% image src="/assets/images/shows/show-straps3.jpg" %}}
 {{< /images >}}
 
-### Technical
+#### Technical
 
 Duration: approx. 5 minutes.
 

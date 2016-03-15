@@ -8,7 +8,14 @@ title = "classes"
 {{% image src="/assets/images/classes/classes-hero.jpg" %}}
 {{< /hero >}}
 
-## Aerial silks and hoop weekly classes
+## Classes
+
+{{< smooth-link label="Aerial silks and hoop weekly classes" href="#aerial-silks-and-hoop-weekly-classes" >}}
+{{< smooth-link label="Yoga classes" href="#yoga-classes" >}}
+{{< smooth-link label="Flexibility classes" href="#flexibility-classes" >}}
+{{< smooth-link label="Private classes" href="#private-classes" >}}
+
+### Aerial silks and hoop weekly classes
 
 Aerial training for beginners and intermediate.
 
@@ -16,7 +23,7 @@ The class presents a warm up based in yoga to achieve concentration, body awaren
 
 The class ends with stretching and relaxation exercises.
 
-### Book a class
+#### Book a class
 
 - *Tuesday and Thursday: 7 - 8.30pm* at Olympia Circus, address: Schipuidenlaan 18, 1062HE - Amsterdam.
 - *Friday: 7 - 8.30pm* at {{< target-blank "Pole Dance Factoty" "http://www.pdfamsterdam.com" >}}, address: Daniel Goedkoopstraat 16, 1096BD - Amsterdam.
@@ -31,7 +38,7 @@ The class ends with stretching and relaxation exercises.
 {{% image src="/assets/images/classes/classes4.jpg" %}}
 {{< /images >}}
 
-## Yoga classes
+### Yoga classes
 
 Back in 2011, I finished my yoga Purna Yoga teacher's training at the International Yoga Federation in Argentina in Buenos Aires and before that, I also studied Iyengar Yoga. Later on, I followed a few Acro yoga workshops in Argentina and Amsterdam and I also did some study over Okido yoga, acupressure and massage. I'm an active yoga practitioner and I love to be a student and to practice Vinyasa on a regular basis.
 
@@ -43,7 +50,7 @@ I currently teach weekly classes of Artistic Yoga at Pole Dance Factory Amsterda
 {{% image src="/assets/images/classes/classes-yoga.jpg" %}}
 {{< /images >}}
 
-## Flexibility classes 
+### Flexibility classes 
 
 Flexibility is important in everybody's life, it helps to keep you movable, increase the range of motion and prevent injuries.
 
@@ -61,7 +68,7 @@ For groups check [workshops.](/workshops)
 {{% image src="/assets/images/classes/classes-f6.jpg" %}}
 {{< /images >}}
 
-## Private classes
+### Private classes
 
 Aerial, yoga and flexibility classes one on one, just you and the teacher. Classes are scheduled on demand, different locations available in Amsterdam.
 
