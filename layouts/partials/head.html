@@ -5,8 +5,14 @@
   <script>document.getElementsByTagName('html')[0].className="happy";</script>
 </head>
 <body>
+    <nav class="toggler">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </nav>
     <header id="top" class="global">
-      <h1 class="mv"><a data-scroll href="#top"><strong>{{ .Site.Title }}</strong></a></h1>
+      <h1 class="mv"><a href="/"><strong>{{ .Site.Title }}</strong></a></h1>
       <p>{{ .Site.Params.description }}</p>
       {{ partial "social.html" . }}
       {{ partial "menu.html" . }}

@@ -1,7 +1,8 @@
-{{ $currentUrl := .URL }}
+{{ $baseURL := .Site.BaseURL }}
+{{ $permalink := .Permalink }}
+{{ $URL := replace $permalink $baseURL "/" }}
 <nav class="global">
-    {{ $currentNode := . }}
     {{ range .Site.Menus.main }}
-    <a class="nav-item{{ if eq $currentNode . }} active{{ end }}" href="{{.URL}}">{{if .Pre}}{{.Pre}} {{end}}{{ .Name }}</a>
+        <a class="nav-item{{ if eq $URL .URL }} active{{ end }}" href="{{ .URL }}">{{if .Pre}}{{.Pre}} {{end}}{{ .Name }}</a>
     {{ end }}
 </nav>
