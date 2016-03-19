@@ -6,7 +6,7 @@ layoutdir = "layouts"
 publishdir = "public"
 builddrafts = false
 
-baseurl = "http://natos.github.io/marcelaviola.com.ar"
+baseurl = "http://www.marcelaviola.com.ar"
 
 relativeurls = false
 canonifyurls = true
