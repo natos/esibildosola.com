@@ -356,8 +356,10 @@ header.global p { display: none; }
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  /*background-image: url('/assets/images/logo-horizontal.png');*/
+  background-image: url('/assets/images/logo-horizontal.png');
+  /*
   background-image: url('/marcelaviola.com.ar/assets/images/logo-horizontal.png');
+  */
   transform: translate3d(-50%, -40%, 0) scale(.25);
 }
 @media screen and (min-width: 760px) {
@@ -576,10 +578,10 @@ nav.social {
     background-size: 100%;
     background-position: 50% 0%;
     background-repeat: no-repeat;
-    /*
     background-image: url('/assets/images/about/bio-background.jpg');
-    */
+    /*
     background-image: url('/marcelaviola.com.ar/assets/images/about/bio-background.jpg');
+    */
   }
   .bio > figure {
     display: none;
@@ -675,8 +677,10 @@ nav.social {
   background-color: #078191;
   background-size: cover;
   background-repeat: no-repeat;
-  // background-image: url('/assets/images/contact/contact-mobile.jpg');
+  background-image: url('/assets/images/contact/contact-mobile.jpg');
+  /*
   background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-mobile.jpg');
+  */
   will-change: transform;
 }
 
@@ -686,8 +690,10 @@ nav.social {
     padding-right: 50%;
     min-height: 900px;
     background-position: 100% 50%;
-    // background-image: url('/assets/images/contact/contact-background.jpg');
+    background-image: url('/assets/images/contact/contact-background.jpg');
+    /*
     background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-background.jpg');
+    */
   }
 }
 .contact li {
