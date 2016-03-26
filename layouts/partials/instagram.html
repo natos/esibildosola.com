@@ -1,32 +1,15 @@
 <section class="instagrams">
     <article>
-        {{ $urlPre := "https://api.instagram.com/v1/users/self/media/recent/?count=8&access_token=" }}
-        {{ $url := (print $urlPre $.Site.Data.instagram.config.access_token) }}
-        {{ $instagrams := getJSON $url }}
-        <div class="gallery">
-        {{ range $instagrams.data }}
-            <figure>
-                <a class="instagram" href="{{ .link }}" target="_blank">
-                    <img alt="{{ .caption.text }}" src="{{ .images.low_resolution.url }}" />
-                    {{ if $.Site.Data.instagram.config.show_count }}
-                    <figcaption class="instagram-likes"><i class="fa fa-star"></i> {{ .likes.count }}</figcaption>
-                    {{ end }}
-                    {{ if $.Site.Data.instagram.config.show_tags }}
-                    <figcaption class="instagram-tags">
-                    {{ range $index, $element := .tags }}
-                        {{ if lt $index $.Site.Data.instagram.config.size }}
-                            <span class="instagram-tag">#{{ $element }}</span>
-                        {{ end }}
-                    {{ end }}
-                    {{ end }}
-                    </figcaption>
-                </a>
-            </figure>
-        {{ end }}
-        </div>
-        <footer>
+        <header>
             <a class="instagram-logo" href="https://www.instagram.com/pulgacion/" target="_blank"><i class="fa fa-instagram"></i></a>
             <a class="instagram-more" href="https://www.instagram.com/pulgacion/" target="_blank"><strong>@pulgacion</strong></a>
-        </footer>
+        </header>
+        <div class="gallery"></div>
     </article>
 </section>
+<script>
+    {{ $urlPre := "https://api.instagram.com/v1/users/self/media/recent/?count=" }}
+    {{ $urlPos := "&access_token=" }}
+    {{ $url := (print $urlPre $.Site.Data.instagram.config.size $urlPos $.Site.Data.instagram.config.access_token) $urlPos }}
+    var instagrams_source = {{ $url }};
+</script>

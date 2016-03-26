@@ -51,12 +51,14 @@ module.exports = function(grunt) {
             },
             "build": {
                 "src": [
+                    'src/js/lib/jquery.js',
                     'src/js/lib/viewport.js',
                     'src/js/lib/smooth-scroll.min.js',
                     'src/js/lib/requestAnimFrame.js',
                     'src/js/fader.js',
                     'src/js/menu.js',
                     'src/js/images.js',
+                    'src/js/instagrams.js',
                     'src/js/scroller.js'
                 ],
                 "dest": 'static/assets/js/<%= pkg.name %>.min.js'

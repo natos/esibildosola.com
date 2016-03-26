@@ -841,3 +841,77 @@ nav.social {
   opacity: 0;
 }
 
+/*** Instagram */
+.instagrams {
+  padding: 3rem 0;
+  color: #eee;
+  border-bottom: 1rem solid #4C1E36;
+  background-color: #731C51;
+  background-color: rgba(115, 28, 81, 0.95);
+  text-align: center;
+}
+.instagrams a {
+  color: #fff;
+}
+.instagrams .gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.instagrams .instagram {
+  position: relative;
+  display: block;
+  color: #4C1E36;
+  margin: 0;
+  padding: 0;
+  opacity: .70;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  will-change: opacity;
+}
+.instagrams .instagram:hover {
+  opacity: 1;
+}
+.instagrams .instagram img {
+  display: block;
+  transform: scale3d(1,1,1);
+  transition: all .5s ease-in-out;
+  will-change: opacity, transform;
+}
+.instagrams .instagram:hover img {
+  transform: scale3d(1.05,1.05,1.05);
+}
+.instagrams .instagram-tags,
+.instagrams .instagram-likes {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: #fff;
+  opacity: 0;
+  transform: scale3d(.5,.5,.5);
+  transition: all .35s ease-in-out;
+  will-change: opacity, transform;
+}
+.instagrams .instagram:hover .instagram-tag,
+.instagrams .instagram:hover .instagram-tags,
+.instagrams .instagram:hover .instagram-likes {
+  transform: scale3d(1,1,1);
+  opacity: .75;
+}
+.instagrams .instagram:hover .instagram-tag:hover,
+.instagrams .instagram:hover .instagram-likes:hover {
+  color: #C4B014;
+  transform: scale3d(1.1,1.1,1);
+  opacity: 1;
+}
+.instagrams .instagram-more {
+  display: block;
+  font-size: 1.5em;
+}
+.instagrams .instagram-logo {
+  display: block;
+  font-size: 3em;
+}

@@ -856,12 +856,9 @@ nav.social {
   opacity: 0;
 }
 
-/**
-* Instagram
-*/
+/*** Instagram */
 .instagrams {
-  padding: 0;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
   color: #eee;
   border-bottom: 1rem solid #4C1E36;
   background-color: #731C51;
@@ -869,7 +866,7 @@ nav.social {
   text-align: center;
 }
 .instagrams a {
-  color: #4C1E36;
+  color: #fff;
 }
 .instagrams .gallery {
   display: flex;
@@ -877,8 +874,7 @@ nav.social {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
-  border-bottom: 1rem solid #4C1E36;
+  padding: 1.5rem 0;
 }
 .instagrams .instagram {
   position: relative;
@@ -891,12 +887,38 @@ nav.social {
   transition: all 1s ease-in-out;
   will-change: opacity;
 }
+.instagrams .video .instagram:after {
+  /* play-circle icon */
+  content: "\f144";
+  /* play-circle icon end */
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  /* icon end */
+  position: absolute;
+  z-index: 900;
+  left: 50%;
+  top: 50%;
+  transform: scale3d(1, 1, 1) translate3d(-50%, -50%, 0);
+  opacity: 0;
+  color: #efefef;
+  text-align: center;
+  font-size: 5em;
+  will-change: opacity transform;
+  transition: all 1s ease-in-out;
+}
 .instagrams .instagram:hover {
   opacity: 1;
 }
+.instagrams .instagram:hover:after {
+  opacity: .5;
+  transform: scale3d(1.05, 1.05, 1.05) translate3d(-50%, -50%, 0);
+}
 .instagrams .instagram img {
   display: block;
-  transform: scale3d(1,1,1);
+  transform: scale3d(1, 1, 1);
   transition: all .5s ease-in-out;
   will-change: opacity, transform;
 }
@@ -913,6 +935,12 @@ nav.social {
   transform: scale3d(.5,.5,.5);
   transition: all .35s ease-in-out;
   will-change: opacity, transform;
+}
+.instagrams .instagram-tag {
+  margin-right: .5rem;
+}
+.instagrams .instagram-tag:before {
+  content: "#";
 }
 .instagrams .instagram:hover .instagram-tag,
 .instagrams .instagram:hover .instagram-tags,

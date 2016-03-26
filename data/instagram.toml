@@ -1,6 +1,6 @@
 [config]
     size = 6
-    show_tags = false
+    show_tags = true
     show_count = false
     client_id = "b6b939c7b7824a7d9aa18448c75b001c"
     access_token = "188406021.b6b939c.f07551a8700c4bc7ade3b9c873ef29b3"
