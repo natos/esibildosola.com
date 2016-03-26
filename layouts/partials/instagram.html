@@ -14,7 +14,7 @@
                     {{ if $.Site.Data.instagram.config.show_tags }}
                     <figcaption class="instagram-tags">
                     {{ range $index, $element := .tags }}
-                        {{ if lt $index 3 }}
+                        {{ if lt $index $.Site.Data.instagram.config.size }}
                             <span class="instagram-tag">#{{ $element }}</span>
                         {{ end }}
                     {{ end }}

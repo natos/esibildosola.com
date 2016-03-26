@@ -1,4 +1,5 @@
 [config]
+    size = 6
     show_tags = false
     show_count = false
     client_id = "b6b939c7b7824a7d9aa18448c75b001c"
