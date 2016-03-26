@@ -1,0 +1,29 @@
+{
+  "name": "marcelaviola.com.ar",
+  "version": "1.0.0",
+  "description": "Marcela Viola Web Site",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-responsive-images": "^0.1.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natos/marcelaviola.com.ar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natos/marcelaviola.com.ar/issues"
+  },
+  "homepage": "https://github.com/natos/marcelaviola.com.ar"
+}

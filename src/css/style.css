@@ -356,11 +356,9 @@ header.global p { display: none; }
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url('/assets/images/logo-horizontal.png');
-  /*
-  background-image: url('/marcelaviola.com.ar/assets/images/logo-horizontal.png');
-  */
+  background-image: url('/assets/images/logo/x1/logo-horizontal.png');
   transform: translate3d(-50%, -40%, 0) scale(.25);
+  will-change: transform;
 }
 @media screen and (min-width: 760px) {
   .mv { display: none; }
@@ -368,6 +366,7 @@ header.global p { display: none; }
 @media screen and (min-width: 1024px) {
   .mv { display: block; }
   .mv a::after {
+    background-image: url('/assets/images/logo/x2/logo-horizontal.png');
     transform: translate3d(-50%, -30%, 0) scale(.45);
     transition: all .5s ease-out;
     animation: showdown 1s 1;
@@ -578,10 +577,7 @@ nav.social {
     background-size: 100%;
     background-position: 50% 0%;
     background-repeat: no-repeat;
-    background-image: url('/assets/images/about/bio-background.jpg');
-    /*
-    background-image: url('/marcelaviola.com.ar/assets/images/about/bio-background.jpg');
-    */
+    background-image: url('/assets/images/about/x2/bio-background.jpg');
   }
   .bio > figure {
     display: none;
@@ -677,10 +673,7 @@ nav.social {
   background-color: #078191;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('/assets/images/contact/contact-mobile.jpg');
-  /*
-  background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-mobile.jpg');
-  */
+  background-image: url('/assets/images/contact/x1/contact-mobile.jpg');
   will-change: transform;
 }
 
@@ -690,10 +683,7 @@ nav.social {
     padding-right: 50%;
     min-height: 900px;
     background-position: 100% 50%;
-    background-image: url('/assets/images/contact/contact-background.jpg');
-    /*
-    background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-background.jpg');
-    */
+    background-image: url('/assets/images/contact/x2/contact-background.jpg');
   }
 }
 .contact li {

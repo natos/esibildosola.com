@@ -118,6 +118,7 @@ p {
   color: #efefef;
   text-align: center;
   font-size: 2em;
+  will-change: transform;
   transform: scale3d(1, 1, 1);
   animation: beat 3s 3;
   transition: all 1s ease-in-out;
@@ -166,6 +167,7 @@ footer.global::before {
   z-index: 900;
   left: 50%;
   top: 20%;
+  will-change: transform, opacity;
   transform: translate3d(0, -50%, 0);
   opacity: .5;
   color: #C4B014;
@@ -229,6 +231,7 @@ header.global {
   border-bottom: 1em solid transparent;
   border-color: rgba(178, 13, 97, .9);
   background-color: rgba(178, 13, 97, .1);
+  will-change: transform;
   transform: translate3d(0, 0, 0);
   transition: all .5s ease-in-out;
   animation: color_change 25s infinite alternate;
@@ -356,10 +359,8 @@ header.global p { display: none; }
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url('/assets/images/logo-horizontal.png');
-  /*
-  background-image: url('/marcelaviola.com.ar/assets/images/logo-horizontal.png');
-  */
+  background-image: url('/assets/images/logo/x1/logo-horizontal.png');
+  will-change: transform, opacity;
   transform: translate3d(-50%, -40%, 0) scale(.25);
 }
 @media screen and (min-width: 760px) {
@@ -402,6 +403,7 @@ nav.global {
 .nav-item:hover {
   color: #fff;
   font-weight: bold;
+  will-change: transform;
   transform: scale(1.2);
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -428,6 +430,7 @@ nav.social {
 .social-item {
   margin-top: .5em;
   padding: .25em .5em;
+  will-change: transform, opacity;
   transition: all .2s ease-out;
   color: #eee;
   opacity: .9;
@@ -526,7 +529,8 @@ nav.social {
   height: 100%;
   width: auto;
   object-fit: cover;
-  transform: translate3d(-30%,0,0);
+  will-change: transform;
+  transform: translate3d(0,0,0);
 }
 
 @media screen and (min-width: 810px) {
@@ -578,10 +582,7 @@ nav.social {
     background-size: 100%;
     background-position: 50% 0%;
     background-repeat: no-repeat;
-    background-image: url('/assets/images/about/bio-background.jpg');
-    /*
-    background-image: url('/marcelaviola.com.ar/assets/images/about/bio-background.jpg');
-    */
+    background-image: url('/assets/images/about/x2/bio-background.jpg');
   }
   .bio > figure {
     display: none;
@@ -596,7 +597,7 @@ nav.social {
   border-top: 1em solid #078191;
   border-bottom: 1em solid #078191;
   background-color: #14B6CC;
-  background-color: rgba(20, 182, 204, 0.5);
+  background-color: rgba(20, 182, 204, 0.75);
   padding: 1em;
   text-align: center;
 }
@@ -613,6 +614,7 @@ nav.social {
   }
 }
 .friends .links a {
+  font-size: 1.2em;
   flex: 1;
   color: #eee;
   display: block;
@@ -677,23 +679,24 @@ nav.social {
   background-color: #078191;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('/assets/images/contact/contact-mobile.jpg');
-  /*
-  background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-mobile.jpg');
-  */
-  will-change: transform;
+  background-image: url('/assets/images/contact/x1/contact-mobile.jpg');
 }
 
 @media screen and (min-width: 500px) {
+  .page.layout > section.contact {
+    padding-top: 10rem;
+  }
   .contact {
-    padding: 5em;
+    padding: 5rem;
     padding-right: 50%;
     min-height: 900px;
     background-position: 100% 50%;
-    background-image: url('/assets/images/contact/contact-background.jpg');
-    /*
-    background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-background.jpg');
-    */
+    background-image: url('/assets/images/contact/x1/contact-background.jpg');
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact {
+    background-image: url('/assets/images/contact/x2/contact-background.jpg');
   }
 }
 .contact li {
@@ -703,14 +706,14 @@ nav.social {
   line-height: 1em;
 }
 /* links */
-.social-link { 
-  display: block; 
+.social-link {
+  display: block;
   line-height: 1.5em;
 }
 .social-link-icon { font-size: 1.5em; }
-.social-link-label { 
+.social-link-label {
   margin-left: .5em;
-  display: inline; 
+  display: inline;
   vertical-align: top;
 }
 
@@ -720,7 +723,7 @@ nav.social {
 
 .images {
   overflow: hidden;
-  margin: 2em 0;
+  margin: 2rem 0;
 }
 .images figure {
   display: flex;
@@ -799,6 +802,7 @@ nav.social {
   left: 0;
   text-align: left;
   font-size: 0;
+  will-change: transform;
   transform: translate3d(0, 0, 0);
   transition-duration: .5s;
   animation: none;
@@ -830,6 +834,7 @@ nav.social {
   left: 0;
   transition: all 1s ease-in-out;
   z-index: 0;
+  will-change: transform, opacity;
   transform: translate3d(0,0,0);
 }
 .fader .prepare,
@@ -851,3 +856,57 @@ nav.social {
   opacity: 0;
 }
 
+/**
+* Instagram
+*/
+.instagrams {
+  padding: 0;
+  padding-bottom: 3rem;
+  color: #eee;
+  border-bottom: 1rem solid #4C1E36;
+  background-color: #731C51;
+  background-color: rgba(115, 28, 81, 0.95);
+  text-align: center;
+}
+.instagrams a {
+  color: #4C1E36;
+}
+.instagrams .gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  border-bottom: 1rem solid #4C1E36;
+}
+.instagrams .instagram {
+  display: block;
+  color: #4C1E36;
+  margin: 0;
+  padding: 0;
+  opacity: .70;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  will-change: opacity;
+}
+.instagrams .instagram:hover {
+  opacity: 1;
+}
+.instagrams .instagram img {
+  display: block;
+  transform: scale3d(1,1,1);
+  transition: all 1s ease-in-out;
+  will-change: opacity, transform;
+}
+.instagrams .instagram:hover img {
+  transform: scale3d(1.05,1.05,1.05);
+}
+.instagrams .instagram-more {
+  display: block;
+  font-size: 1.5em;
+}
+.instagrams .instagram-logo {
+  display: block;
+  font-size: 3em;
+}

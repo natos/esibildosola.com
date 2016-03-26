@@ -9,9 +9,9 @@ module.exports = function(grunt) {
                 },
                 "files": [{
                     "expand": true,                  // Enable dynamic expansion
-                    "cwd": 'src/images/',                   // Src matches are relative to this path
+                    "cwd": 'static/assets/images/',                   // Src matches are relative to this path
                     "src": ['**/**/*.{JPG,GIF,PNG,jpg,gif,png}'],   // Actual patterns to match
-                    "dest": 'static/assets/'               // Destination path prefix
+                    "dest": 'static/assets/images/'               // Destination path prefix
                 }]
             }
         },
@@ -22,24 +22,18 @@ module.exports = function(grunt) {
                     "newFilesOnly": false,
                     "separator": "-",
                     "sizes": [{
-                        "name": "thumb",
-                        "height": 50
-                    },{
                         "name": "x1",
-                        "width": 320
-                    },{
-                        "name": "x2",
                         "width": 640,
                     },{
-                        "name": "x4",
+                        "name": "x2",
                         "width": 1280
                     }]
                 },
                 "files": [{
                     "expand": true,
-                    "cwd": 'src/',
+                    "cwd": 'src/images/',
                     "src": ['**/*.{JPG,GIF,PNG,jpg,gif,png}'],
-                    "custom_dest": 'tmp/{%= path %}/{%= name %}'
+                    "custom_dest": 'static/assets/images/{%= path %}/{%= name %}'
                     // "dest": "tmp/"
                 }]
             }
@@ -50,38 +44,49 @@ module.exports = function(grunt) {
             "tmp": ['tmp/*']
         },
 
-
-        jade: {
-            compile: {
-                options: {
-                    data: function(dest, src) {
-                        // generate data for marcelaviola
-                        return require('./data/marcelaviola');
-                    }
-                },
-                files: {
-                    "marcelaviola.html": ["./views/marcelaviola.jade"]
-                    "shows.html": ["./views/shows.jade"],
-                    "classes.html": ["./views/classes.jade"],
-                    "contact.html": ["./views/contact.jade"]
+        "pkg": grunt.file.readJSON('package.json'),
+        "uglify": {
+            "options": {
+                "banner": '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+            },
+            "build": {
+                "src": [
+                    'src/js/lib/jquery.min.js',
+                    'src/js/lib/jquery.instagram.js',
+                    'src/js/lib/viewport.js',
+                    'src/js/lib/smooth-scroll.min.js',
+                    'src/js/lib/requestAnimFrame.js',
+                    'src/js/fader.js',
+                    'src/js/menu.js',
+                    'src/js/images.js',
+                    'src/js/scroller.js'
+                ],
+                "dest": 'static/assets/js/<%= pkg.name %>.min.js'
+            }
+        },
+        "watch": {
+            "scripts": {
+                "files": ['src/js/*.js', 'src/js/**/*.js'],
+                "tasks": ['uglify'],
+                "options": {
+                    "spawn": false,
                 }
             }
         }
     };
 
     grunt.initConfig(gruntConfig);
-
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-responsive-images');
-    grunt.loadNpmTasks('grunt-contrib-jade');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Generate images from /src and dump in /tmp
-    grunt.registerTask('images', ['responsive_images']);
+    grunt.registerTask('responsive-images', ['responsive_images']);
     // Optimize /tmp images and dump in /content
-    grunt.registerTask('optimize', ['imagemin', 'clean:tmp']);
+    grunt.registerTask('minimize-images', ['imagemin']);
     // Compile web site
-    grunt.registerTask('compile', ['images', 'optimize']);
-    // Default task
-    grunt.registerTask('default', ['jade']);
+    grunt.registerTask('compile', ['uglify', 'watch']);
+
 };

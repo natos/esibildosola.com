@@ -5,7 +5,7 @@ title = "classes"
 +++
 
 {{< hero>}}
-{{% image src="/assets/images/classes/classes-hero.jpg" %}}
+{{% image src="/assets/images/classes/x1/classes-hero.jpg" %}}
 {{< /hero >}}
 
 ## Classes
@@ -34,8 +34,8 @@ The class ends with stretching and relaxation exercises.
 [Sign in advance is required ](mailto:marcela.aerialist@gmail.com?subject=Contact%20from%20your%20website)
 
 {{< images size="2" >}}
-{{% image src="/assets/images/classes/classes3.jpg" %}}
-{{% image src="/assets/images/classes/classes4.jpg" %}}
+{{% image src="/assets/images/classes/x1/classes3.jpg" %}}
+{{% image src="/assets/images/classes/x1/classes4.jpg" %}}
 {{< /images >}}
 
 ### Yoga classes
@@ -47,10 +47,10 @@ This wide range of knowledge gives me the tools to adapt the class to each stude
 I currently teach weekly classes of Artistic Yoga at Pole Dance Factory Amsterdam on Fridays afternoon. I'm also available for private classes and group classes on demand. [Get in touch](/contact)
 
 {{< images size="1" >}}
-{{% image src="/assets/images/classes/classes-yoga.jpg" %}}
+{{% image src="/assets/images/classes/x1/classes-yoga.jpg" %}}
 {{< /images >}}
 
-### Flexibility classes 
+### Flexibility classes
 
 Flexibility is important in everybody's life, it helps to keep you movable, increase the range of motion and prevent injuries.
 
@@ -64,8 +64,8 @@ Also indicated for nonacrobats and office workers. All levels welcome, no previe
 For groups check [workshops.](/workshops)
 
 {{< images size="2" >}}
-{{% image src="/assets/images/classes/classes-f5.jpg" %}}
-{{% image src="/assets/images/classes/classes-f6.jpg" %}}
+{{% image src="/assets/images/classes/x1/classes-f5.jpg" %}}
+{{% image src="/assets/images/classes/x1/classes-f6.jpg" %}}
 {{< /images >}}
 
 ### Private classes
@@ -77,8 +77,8 @@ I can also come to your house or studio. [Contact me to get a quote.](mailto:mar
 For groups check [workshops.](/workshops)
 
 {{< images size="2" >}}
-{{% image src="/assets/images/classes/classes1.jpg" %}}
-{{% image src="/assets/images/classes/classes7.jpg" %}}
+{{% image src="/assets/images/classes/x1/classes1.jpg" %}}
+{{% image src="/assets/images/classes/x1/classes7.jpg" %}}
 {{< /images >}}
 
 {{< content-footer >}}Keep Flying!{{< /content-footer >}}

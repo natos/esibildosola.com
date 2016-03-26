@@ -356,10 +356,7 @@ header.global p { display: none; }
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url('/assets/images/logo-horizontal.png');
-  /*
-  background-image: url('/marcelaviola.com.ar/assets/images/logo-horizontal.png');
-  */
+  background-image: url('/assets/images/logo/x1/logo-horizontal.png');
   transform: translate3d(-50%, -40%, 0) scale(.25);
 }
 @media screen and (min-width: 760px) {
@@ -526,7 +523,7 @@ nav.social {
   height: 100%;
   width: auto;
   object-fit: cover;
-  transform: translate3d(-30%,0,0);
+  transform: translate3d(0,0,0);
 }
 
 @media screen and (min-width: 810px) {
@@ -578,10 +575,7 @@ nav.social {
     background-size: 100%;
     background-position: 50% 0%;
     background-repeat: no-repeat;
-    background-image: url('/assets/images/about/bio-background.jpg');
-    /*
-    background-image: url('/marcelaviola.com.ar/assets/images/about/bio-background.jpg');
-    */
+    background-image: url('/assets/images/about/x1/bio-background.jpg');
   }
   .bio > figure {
     display: none;
@@ -677,23 +671,24 @@ nav.social {
   background-color: #078191;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('/assets/images/contact/contact-mobile.jpg');
-  /*
-  background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-mobile.jpg');
-  */
-  will-change: transform;
+  background-image: url('/assets/images/contact/x1/contact-mobile.jpg');
 }
 
 @media screen and (min-width: 500px) {
+  .page.layout > section.contact {
+    padding-top: 10rem;
+  }
   .contact {
-    padding: 5em;
+    padding: 5rem;
     padding-right: 50%;
     min-height: 900px;
     background-position: 100% 50%;
-    background-image: url('/assets/images/contact/contact-background.jpg');
-    /*
-    background-image: url('/marcelaviola.com.ar/assets/images/contact/contact-background.jpg');
-    */
+    background-image: url('/assets/images/contact/x1/contact-background.jpg');
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact {
+    background-image: url('/assets/images/contact/x2/contact-background.jpg');
   }
 }
 .contact li {
@@ -703,14 +698,14 @@ nav.social {
   line-height: 1em;
 }
 /* links */
-.social-link { 
-  display: block; 
+.social-link {
+  display: block;
   line-height: 1.5em;
 }
 .social-link-icon { font-size: 1.5em; }
-.social-link-label { 
+.social-link-label {
   margin-left: .5em;
-  display: inline; 
+  display: inline;
   vertical-align: top;
 }
 
@@ -720,7 +715,7 @@ nav.social {
 
 .images {
   overflow: hidden;
-  margin: 2em 0;
+  margin: 2rem 0;
 }
 .images figure {
   display: flex;

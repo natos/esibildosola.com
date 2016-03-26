@@ -1,0 +1,20 @@
+<section class="instagrams">
+    <article>
+        {{ $urlPre := "https://api.instagram.com/v1/users/self/media/recent/?count=8&access_token=" }}
+        {{ $url := (print $urlPre $.Site.Data.instagram.config.access_token) }}
+        {{ $instagrams := getJSON $url }}
+        <div class="gallery">
+        {{ range $instagrams.data }}
+            <figure>
+                <a class="instagram" href="{{ .link }}" target="_blank">
+                    <img alt="{{ .caption.text }}" src="{{ .images.low_resolution.url }}" />
+                </a>
+            </figure>
+        {{ end }}
+        </div>
+        <footer>
+            <a class="instagram-logo" href="https://www.instagram.com/pulgacion/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a class="instagram-more" href="https://www.instagram.com/pulgacion/" target="_blank"><strong>@pulgacion</strong></a>
+        </footer>
+    </article>
+</section>

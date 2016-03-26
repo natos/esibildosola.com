@@ -2,7 +2,7 @@
 <div class="hero fader fade-{{ $len }} animate">
     <figure>
         {{ range $i, $name := $.Site.Data.home.hero }}
-              <img class="fader-{{$i}}" src="{{ . }}">
+              <img class="fader-{{$i}}" src="{{ . }}" data-vertical-prefix="v" data-lowres="{{ . }}" data-highres='{{ replace . "x1" "x2"}}'>
         {{ end }}
     </figure>
 </div>
