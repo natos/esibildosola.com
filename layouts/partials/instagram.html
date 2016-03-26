@@ -8,6 +8,18 @@
             <figure>
                 <a class="instagram" href="{{ .link }}" target="_blank">
                     <img alt="{{ .caption.text }}" src="{{ .images.low_resolution.url }}" />
+                    {{ if $.Site.Data.instagram.config.show_count }}
+                    <figcaption class="instagram-likes"><i class="fa fa-star"></i> {{ .likes.count }}</figcaption>
+                    {{ end }}
+                    {{ if $.Site.Data.instagram.config.show_tags }}
+                    <figcaption class="instagram-tags">
+                    {{ range $index, $element := .tags }}
+                        {{ if lt $index 3 }}
+                            <span class="instagram-tag">#{{ $element }}</span>
+                        {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    </figcaption>
                 </a>
             </figure>
         {{ end }}

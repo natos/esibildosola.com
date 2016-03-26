@@ -51,8 +51,6 @@ module.exports = function(grunt) {
             },
             "build": {
                 "src": [
-                    'src/js/lib/jquery.min.js',
-                    'src/js/lib/jquery.instagram.js',
                     'src/js/lib/viewport.js',
                     'src/js/lib/smooth-scroll.min.js',
                     'src/js/lib/requestAnimFrame.js',

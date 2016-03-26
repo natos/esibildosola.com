@@ -114,21 +114,4 @@
     // run orchestrator
     Orchestrator(window, document);
 
-
-
-
-
-    console.log('Instagram');
-
-    var client_id = '289a1114d8b943838f8e0912c678ab53';
-    var access_token = '13931722.289a111.05768ab4be234246bcdf0c7f08693b05';
-
-    $.ajax({
-      dataType: "jsonp",
-      url: "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + access_token + "&client_id=" + client_id,
-      success: function(response) {
-        console.log(response)
-      }
-    });
-
 }(window, document));
