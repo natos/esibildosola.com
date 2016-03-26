@@ -1,13 +1,14 @@
 title = "Marcela Viola"
-languagecode = "en_US"
+baseurl = "http://www.marcelaviola.com.ar"
+[params]
+  description = "Aerialist, silks, lyra, and straps."
+  keywords = "marcela, viola, aerialist, artist, shows, teacher, silks, lyra, hoop, rope, straps, yoga, healthy, amsterdam, flexibility, classes, lessons"
 
+languagecode = "en_US"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 builddrafts = false
-
-baseurl = "http://www.marcelaviola.com.ar"
-
 relativeurls = false
 canonifyurls = true
 watch = true
@@ -20,9 +21,6 @@ watch = true
 
 [author]
   name = "Natan Santolo"
-
-[params]
-  description = "Aerialist, silks, lyra, and straps."
 
 [taxonomies]
   category = "categories"

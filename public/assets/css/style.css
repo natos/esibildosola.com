@@ -15,7 +15,6 @@ body {
   color: #333;
   font-size: 100%;
   font-family: 'Lato', sans-serif;
-  /*font-family: 'Merriweather', serif;*/
   line-height: 1.75;
   min-height: 100%;
   background-color: #fefefe;
@@ -450,6 +449,7 @@ nav.social {
     display: flex;
   }
   .social-item {
+    margin-top: 0;
     padding: 1em .5em;
   }
   .social-item:hover {
