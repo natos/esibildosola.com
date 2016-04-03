@@ -504,18 +504,6 @@ nav.social {
   left: 50%;
 }
 
-.happy img {
-  transition: all 1s ease-in-out;
-}
-.happy img[data-state] {
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-}
-.happy img[data-state="ready"] {
-  -webkit-filter: none;
-  filter: none;
-}
-
 /*
   #nav-icon-menu end
 */
