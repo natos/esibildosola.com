@@ -46,6 +46,7 @@ p {
   position: relative;
   padding: 0;
   margin: 0 auto;
+  transition: all 2s ease-in-out;
 }
 
 .page > section:first-of-type {
@@ -53,7 +54,7 @@ p {
   padding: 0;
   padding-top: 5rem;
   padding-bottom: 1rem;
-  margin: 80% 0 90%;
+  margin: 100% 0;
   color: #eee;
 }
 .page > section:first-of-type.about { margin-bottom: 0; }
@@ -68,6 +69,11 @@ p {
     .page.layout > section:first-of-type { margin: 150% 0; }
     .page.layout > section:first-of-type.about { margin-bottom: 0; }
     .page.layout section.friends { margin-bottom: 90%; }
+}
+@media screen and (min-width: 600px) {
+  .page.layout > section:first-of-type { margin: 70% 0; }
+  .page.layout > section:first-of-type.about { margin-bottom: 0; }
+  .page.layout section.friends { margin-bottom: 70%; }
 }
 @media screen and (min-width: 810px) {
   .page.layout > section:first-of-type { margin: 50% 0; }
@@ -498,8 +504,19 @@ nav.social {
   left: 50%;
 }
 
+.happy img {
+  transition: all 1s ease-in-out;
+}
+.happy img[data-state] {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+.happy img[data-state="ready"] {
+  -webkit-filter: none;
+  filter: none;
+}
 
-/* 
+/*
   #nav-icon-menu end
 */
 
@@ -524,10 +541,10 @@ nav.social {
 }
 .hero img {
   display: block;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   height: 100%;
-  width: auto;
+  width: 100%;
   object-fit: cover;
   will-change: transform;
   transform: translate3d(0,0,0);
@@ -537,7 +554,6 @@ nav.social {
   .hero img {
     height: auto;
     min-height: none;
-    width: 100%;
     transform: translate3d(0,0,0);
   }
 }
@@ -559,6 +575,7 @@ nav.social {
   top: -1em;
 }
 .about {
+  position: relative;
   color: #eee;
   border-bottom: 1em solid #333;
   background-color: #000;
@@ -570,22 +587,31 @@ nav.social {
 .about a { color: #078191; }
 .about a:hover { color: #14B6CC; }
 
-.bio {}
-
 @media screen and (min-width: 1024px) {
-
-  .page.layout .bio {
-    padding-right: 50%;
+  .about figure {
+    margin: 1rem 4rem;
+  }
+  .about .bio {
+    padding-right: 55%;
+  }
+  .bio-primary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+  }
+  .bio-secondary {
+    display: none;
   }
   .bio {
-    min-height: 750px;
-    background-size: 100%;
-    background-position: 50% 0%;
-    background-repeat: no-repeat;
-    background-image: url('/assets/images/about/x2/bio-background.jpg');
+    // min-height: 750px;
+    // background-size: 100%;
+    // background-position: 50% 0%;
+    // background-repeat: no-repeat;
+    // background-image: url('/assets/images/about/x2/bio-background.jpg');
   }
   .bio > figure {
-    display: none;
+    // display: none;
   }
 }
 /**
@@ -857,37 +883,47 @@ nav.social {
 }
 
 /*** Instagram */
-.instagrams {
-  padding: 3rem 0;
+.gallery {
+  padding: 1rem 0;
   color: #eee;
   border-bottom: 1rem solid #4C1E36;
   background-color: #731C51;
   background-color: rgba(115, 28, 81, 0.95);
   text-align: center;
 }
-.instagrams a {
-  color: #fff;
+.gallery a {
+  color: #eee;
 }
-.instagrams .gallery {
+.gallery header {
+  opacity: .8;
+  vertical-align: top;
+}
+.gallery header > a {
+  padding: 0 1rem;
+}
+.gallery header > a strong {
+  line-height: 3em;
+  vertical-align: top;
+}
+.gallery .instagramas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0 0;
 }
-.instagrams .instagram {
+.gallery .instagrama {
   position: relative;
   display: block;
   color: #4C1E36;
   margin: 0;
-  padding: 0;
-  opacity: .70;
+  padding: .5rem;
   overflow: hidden;
   transition: all 1s ease-in-out;
   will-change: opacity;
 }
-.instagrams .video .instagram:after {
+.gallery .video .instagrama:after {
   /* play-circle icon */
   content: "\f144";
   /* play-circle icon end */
@@ -909,56 +945,54 @@ nav.social {
   will-change: opacity transform;
   transition: all 1s ease-in-out;
 }
-.instagrams .instagram:hover {
-  opacity: 1;
-}
-.instagrams .instagram:hover:after {
+.gallery .instagrama:hover:after {
   opacity: .5;
   transform: scale3d(1.05, 1.05, 1.05) translate3d(-50%, -50%, 0);
 }
-.instagrams .instagram img {
+.gallery .instagrama img {
   display: block;
   transform: scale3d(1, 1, 1);
   transition: all .5s ease-in-out;
   will-change: opacity, transform;
 }
-.instagrams .instagram:hover img {
-  transform: scale3d(1.05,1.05,1.05);
+.gallery .instagrama:hover img {
+  transform: scale3d(1.05, 1.05, 1.05);
 }
-.instagrams .instagram-tags,
-.instagrams .instagram-likes {
+.gallery .instagrama-likes {
+  margin-left: .5rem;
+  left: .5rem;
+  top: .5rem;
+}
+.gallery .instagrama-likes:before { content: "❤ "; color: red; }
+.gallery .instagrama-tags {
+  margin-right: .5rem;
+  right: .5rem;
+  bottom: .5rem;
+}
+.gallery .instagramainstagrama-tag { margin-left: .5rem; }
+.gallery .instagrama-tag:before { content: "#"; }
+/*.gallery .instagrama-tags,
+.gallery .instagrama-likes {*/
+.gallery figcaption {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
   color: #fff;
   opacity: 0;
-  transform: scale3d(.5,.5,.5);
+  transform: scale3d(.5, .5, .5);
   transition: all .35s ease-in-out;
   will-change: opacity, transform;
 }
-.instagrams .instagram-tag {
-  margin-right: .5rem;
-}
-.instagrams .instagram-tag:before {
-  content: "#";
-}
-.instagrams .instagram:hover .instagram-tag,
-.instagrams .instagram:hover .instagram-tags,
-.instagrams .instagram:hover .instagram-likes {
-  transform: scale3d(1,1,1);
+.gallery .instagrama:hover .instagrama-tag,
+.gallery .instagrama:hover .instagrama-tags,
+.gallery .instagrama:hover .instagrama-likes {
+  transform: scale3d(1, 1, 1);
   opacity: .75;
 }
-.instagrams .instagram:hover .instagram-tag:hover,
-.instagrams .instagram:hover .instagram-likes:hover {
-  color: #C4B014;
-  transform: scale3d(1.1,1.1,1);
+.gallery .instagrama:hover .instagrama-tag:hover,
+.gallery .instagrama:hover .instagrama-likes:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
   opacity: 1;
 }
-.instagrams .instagram-more {
-  display: block;
-  font-size: 1.5em;
-}
-.instagrams .instagram-logo {
-  display: block;
+.gallery .instagrama-logo {
   font-size: 3em;
+  line-height: 1em;
 }
