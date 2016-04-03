@@ -5,7 +5,7 @@ title = "workshops"
 +++
 
 {{< hero>}}
-{{% image src="/assets/images/workshops/x1/hero.jpg" %}}
+{{% image src="/assets/images/workshops/x1/hero1.jpg" %}}
 {{< /hero >}}
 
 ## Workshops

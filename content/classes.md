@@ -5,7 +5,7 @@ title = "classes"
 +++
 
 {{< hero>}}
-{{% image src="/assets/images/classes/x1/classes-hero.jpg" %}}
+{{% image src="/assets/images/classes/x1/hero1.jpg" %}}
 {{< /hero >}}
 
 ## Classes

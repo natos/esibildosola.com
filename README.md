@@ -8,7 +8,6 @@ Marcela Viola Web Site
 
     grunt responsive-images
 
-
 ### Optimize images
 
     grunt minimize-images

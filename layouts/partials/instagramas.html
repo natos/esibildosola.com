@@ -1,0 +1,8 @@
+{{ $urlPre := "https://api.instagram.com/v1/users/self/media/recent/?count=" }}
+{{ $urlPos := "&access_token=" }}
+{{ $url := (print $urlPre $.Site.Data.instagram.config.size $urlPos $.Site.Data.instagram.config.access_token) $urlPos }}
+{{ $render := $.Site.Data.instagram.config.render }}
+<section class="gallery">
+    <h3>Instagramas</h3>
+    <article class="instagramas" data-source="{{ $url }}" {{ with $render }} data-render="{{ . }}"{{ end }}></article>
+</section>

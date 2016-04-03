@@ -47,7 +47,10 @@ module.exports = function(grunt) {
         "pkg": grunt.file.readJSON('package.json'),
         "uglify": {
             "options": {
-                "banner": '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+                "banner": '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+                "sourceMap": true,
+                "sourceMapIncludeSources": true,
+                "sourceMapName": 'static/assets/js/<%= pkg.name %>.min.js.map'
             },
             "build": {
                 "src": [
@@ -58,7 +61,7 @@ module.exports = function(grunt) {
                     'src/js/fader.js',
                     'src/js/menu.js',
                     'src/js/images.js',
-                    'src/js/instagrams.js',
+                    'src/js/instagramas.js',
                     'src/js/scroller.js'
                 ],
                 "dest": 'static/assets/js/<%= pkg.name %>.min.js'
