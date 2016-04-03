@@ -63,6 +63,7 @@
         $this.meta.isVisible = typeof viewport.isVisible === 'function' && viewport.isVisible($this.element);
         return $this.meta.isVisible;
     };
+
     ImageElement.prototype.isMobile = function() {
         var $this = this;
         $this.meta.isMobile = /Mobi/.test(navigator.userAgent);
@@ -100,6 +101,10 @@
      */
     ImageElement.prototype.updateSrc = function() {
         var $this = this;
+        // maybe no need to update at all
+        if ($this.src === $this.element.src) {
+            return $this;
+        }
         // if (!$this.isMobile() && !$this.isVertical()) {
         //     $this.src = $this.src.replace($this.meta.verticalPosFix + '.', '.');
         // }
