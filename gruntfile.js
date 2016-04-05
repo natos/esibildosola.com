@@ -92,5 +92,6 @@ module.exports = function(grunt) {
     grunt.registerTask('minimize-images', ['imagemin']);
     // Compile web site
     grunt.registerTask('compile', ['uglify', 'watch']);
+    grunt.registerTask('default', 'compile');
 
 };
