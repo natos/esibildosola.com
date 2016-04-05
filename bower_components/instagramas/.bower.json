@@ -1,0 +1,14 @@
+{
+  "name": "instagramas",
+  "homepage": "https://github.com/natos/instagramas",
+  "_release": "519ac1b6b6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "519ac1b6b664ca0bbff140ead99e4dee8f6d0bb0"
+  },
+  "_source": "https://github.com/natos/instagramas.git",
+  "_target": "*",
+  "_originalSource": "instagramas",
+  "_direct": true
+}
