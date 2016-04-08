@@ -18,6 +18,6 @@
   ],
   "dependencies": {
     "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#^9.1.1",
-    "instagramas": "*"
+    "instagramas": "^1.1.2"
   }
 }

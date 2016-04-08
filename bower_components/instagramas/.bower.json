@@ -20,15 +20,15 @@
     "test",
     "tests"
   ],
-  "version": "1.1.1",
-  "_release": "1.1.1",
+  "version": "1.1.2",
+  "_release": "1.1.2",
   "_resolution": {
     "type": "version",
-    "tag": "v1.1.1",
-    "commit": "0de1d7144d372c9fdb5e354a0fd85db8a5682649"
+    "tag": "v1.1.2",
+    "commit": "7203b3dafa6a6eb4e76084e6e6dfdaa030f870b1"
   },
   "_source": "https://github.com/natos/instagramas.git",
-  "_target": "^1.1.1",
+  "_target": "^1.1.2",
   "_originalSource": "instagramas",
   "_direct": true
 }

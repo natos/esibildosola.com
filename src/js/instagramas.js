@@ -24,7 +24,7 @@
 
 /**
 * @class Instagram
-* @param #data
+* @param $data
 * @return Instagram
 */
 

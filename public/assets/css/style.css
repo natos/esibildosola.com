@@ -569,13 +569,16 @@ nav.social {
   background-color: #000;
   /*padding: 3em 1em;*/
 }
-.about img {
-  max-width: 100%;
-}
 .about a { color: #078191; }
 .about a:hover { color: #14B6CC; }
-
+.bio-primary,
+.bio-secondary {
+  max-width: 100%;
+}
 @media screen and (min-width: 1024px) {
+  .about {
+    height: 916px;
+  }
   .about figure {
     margin: 1rem 4rem;
   }
@@ -587,6 +590,8 @@ nav.social {
     top: 0;
     right: 0;
     width: 60%;
+    max-width: 836px;
+    max-height: 900px;
   }
   .bio-secondary {
     display: none;
@@ -911,7 +916,8 @@ nav.social {
   transition: all 1s ease-in-out;
   will-change: opacity;
 }
-.gallery .video .instagrama:after {
+.gallery .video .instagrama:after,
+.gallery .instagrama-video .instagrama:after {
   /* play-circle icon */
   content: "\f144";
   /* play-circle icon end */
