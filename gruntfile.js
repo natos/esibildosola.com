@@ -50,7 +50,10 @@ module.exports = function(grunt) {
                 "banner": '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
                 "sourceMap": true,
                 "sourceMapIncludeSources": true,
-                "sourceMapName": 'static/assets/js/<%= pkg.name %>.min.js.map'
+                "sourceMapName": 'static/assets/js/<%= pkg.name %>.min.js.map',
+                "compress": false,
+                "beautify": true,
+                "mangle": false
             },
             "build": {
                 "src": [
