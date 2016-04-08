@@ -50,22 +50,22 @@ module.exports = function(grunt) {
                 "banner": '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
                 "sourceMap": true,
                 "sourceMapIncludeSources": true,
-                "sourceMapName": 'static/assets/js/<%= pkg.name %>.min.js.map',
-                "compress": false,
-                "beautify": true,
-                "mangle": false
+                "sourceMapName": 'static/assets/js/<%= pkg.name %>.min.js.map'//,
+                // "compress": false,
+                // "beautify": true,
+                // "mangle": false
             },
             "build": {
                 "src": [
-                    // 'src/js/lib/jquery.js',
-                    'bower_components/instagramas/dist/instagramas.js',
+                    'src/js/lib/jquery.js',
+                    // 'bower_components/instagramas/dist/instagramas.js',
                     'src/js/lib/viewport.js',
                     'src/js/lib/smooth-scroll.min.js',
                     'src/js/lib/requestAnimFrame.js',
                     'src/js/fader.js',
                     'src/js/menu.js',
                     'src/js/images.js',
-                    // 'src/js/instagramas.js',
+                    'src/js/instagramas.js',
                     'src/js/scroller.js'
                 ],
                 "dest": 'static/assets/js/<%= pkg.name %>.min.js'
