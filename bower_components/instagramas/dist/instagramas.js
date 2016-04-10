@@ -196,6 +196,7 @@
         return a;
     };
     function q() {
+        console.log("ready");
         var a = [], b, c = document, d = c.documentElement.doScroll, e = "DOMContentLoaded", f = (d ? /^loaded|^c/ : /^loaded|^i|^c/).test(c.readyState);
         if (!f) {
             c.addEventListener(e, b = function() {
@@ -205,6 +206,7 @@
             });
         }
         return function(b) {
+            console.log("ready adding");
             f ? setTimeout(b, 0) : a.push(b);
         };
     }
