@@ -195,31 +195,20 @@
         $this.parent.element.appendChild(figure);
         return $this;
     };
-    function ready() {
-        console.log("ready");
-        var fns = [], listener, doc = document, hack = doc.documentElement.doScroll, domContentLoaded = "DOMContentLoaded", loaded = (hack ? /^loaded|^c/ : /^loaded|^i|^c/).test(doc.readyState);
-        if (!loaded) {
-            doc.addEventListener(domContentLoaded, listener = function() {
-                doc.removeEventListener(domContentLoaded, listener);
-                loaded = 1;
-                while (listener = fns.shift()) listener();
-            });
-        }
-        return function(fn) {
-            console.log("ready adding");
-            loaded ? setTimeout(fn, 0) : fns.push(fn);
-        };
+    var context = this;
+    function _r(f) {
+        /in/.test(document.readyState) ? setTimeout(function() {
+            _r.call(context, f);
+        }, 9) : f.call(context);
     }
     var instagramas = $d.querySelectorAll(".instagramas");
-    console.log("instagramas", instagramas);
     if (instagramas !== undefined || instagramas !== null) {
         var namespace = $w._instagramas_namespace || "_Instagramas";
         $w._instagramas_namespace = namespace;
         $w[namespace] = {
             collection: []
         };
-        ready(function start() {
-            console.log("start");
+        _r(function start() {
             for (var i = 0; i < instagramas.length; i += 1) {
                 $w[namespace].collection.push(new Instagramas(instagramas[i]));
             }
