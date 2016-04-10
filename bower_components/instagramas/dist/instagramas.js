@@ -90,7 +90,7 @@
             c.element.setAttribute("data-state", "get:success");
             b.call(c, a);
         }
-        return jsonp.get(a, d);
+        return c;
     };
     j.prototype.create = function(a) {
         var b = this;
