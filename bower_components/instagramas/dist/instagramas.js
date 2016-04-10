@@ -64,7 +64,6 @@
         b.element.appendChild(b.loader);
         b.element.setAttribute("data-state", "initiated");
         b.get(j, b.create);
-        console.log('gallery created', b);
     };
     j.prototype.childLoaded = function() {
         var a = this;
@@ -86,12 +85,10 @@
         var c = this;
         c.element.setAttribute("data-state", "get:in-progress");
         function d(a) {
-            console.log('jsonp callback', a);
             c.element.setAttribute("data-state", "get:success");
             b.call(c, a);
         }
-        jsonp.get(a, d);
-        return c;
+        return jsonp.get(a, d);
     };
     j.prototype.create = function(a) {
         var b = this;
@@ -153,19 +150,16 @@
         return a;
     };
     var l = d.querySelectorAll(".instagramas");
-    console.log('instagramas', l);
     if (l !== undefined || l !== null) {
         var m = c._instagramas_namespace || "_Instagramas";
         c[m] = {
             collection: []
         };
-        // d.addEventListener("DOMContentLoaded", function r() {
-            // console.log('DOMContentLoaded');
+        d.addEventListener("DOMContentLoaded", function r() {
             for (var a = 0; a < l.length; a += 1) {
                 c[m].collection.push(new j(l[a]));
             }
-        // });
-        // console.log('addEventListener', d.onload);
+        });
     }
     var n = 0;
     function o(a, b) {
