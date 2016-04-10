@@ -5,6 +5,6 @@
 {{ $size := $.Site.Data.instagram.config.size }}
 <section class="gallery">
     <h3><a href="https://www.instagram.com/pulgacion/" target="_blank">pulgacion</a></h3>
-    <article class="instagramas" data-source="{{ $url }}" {{ with $render }} data-render="{{ . }}"{{ end }}></article>
-    <!-- <article class="instagramas" data-access-token="{{ $.Site.Data.instagram.config.access_token }}" data-show-tags-count="1" data-show-tags="true" data-show-likes="true" {{ with $size }} data-count="{{ . }}"{{ end }}{{ with $render }} data-render="{{ . }}"{{ end }}></article> -->
+    <!-- <article class="instagramas" data-source="{{ $url }}" {{ with $render }} data-render="{{ . }}"{{ end }}></article> -->
+    <article class="instagramas" data-access-token="{{ $.Site.Data.instagram.config.access_token }}" data-show-tags-count="1" data-show-tags="true" data-show-likes="true" {{ with $size }} data-count="{{ . }}"{{ end }}{{ with $render }} data-render="{{ . }}"{{ end }}></article>
 </section>

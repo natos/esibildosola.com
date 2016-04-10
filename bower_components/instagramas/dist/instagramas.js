@@ -64,6 +64,7 @@
         b.element.appendChild(b.loader);
         b.element.setAttribute("data-state", "initiated");
         b.get(j, b.create);
+        console.log('gallery created', b);
     };
     j.prototype.childLoaded = function() {
         var a = this;
@@ -85,6 +86,7 @@
         var c = this;
         c.element.setAttribute("data-state", "get:in-progress");
         function d(a) {
+            console.log('jsonp callback', a);
             c.element.setAttribute("data-state", "get:success");
             b.call(c, a);
         }
