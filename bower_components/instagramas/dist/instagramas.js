@@ -1,8 +1,8 @@
 /*! instagramas 1.1.2 2016-04-10 */
-(function(a, b) {
-    var c = window, d = document;
-    var e = "https://api.instagram.com/v1/users/self/media/recent/?";
-    var f = {
+(function(exports, global) {
+    var $w = window, $d = document;
+    var API_PREFIX = "https://api.instagram.com/v1/users/self/media/recent/?";
+    var data = {
         "data-show-tags": {
             attributeName: "showTags",
             defaultValue: false
@@ -24,208 +24,208 @@
             defaultValue: 5
         }
     };
-    var g = {
+    var template = {
         tag: '<span class="instagrama-tag">{{tag}}</span>',
         loader: '<div class="spinner"><div class="dot1"></div><div class="dot2"></div></div>'
     };
-    var h = {
-        _: function(a) {
-            var b = {};
-            for (var c = 0; c < a.length; c += 1) {
-                b[a[c]] = d.createElement(a[c]);
+    var HTMLElement = {
+        _: function(c) {
+            var o = {};
+            for (var i = 0; i < c.length; i += 1) {
+                o[c[i]] = $d.createElement(c[i]);
             }
-            return b;
+            return o;
         }([ "div", "figure", "figcaption", "img", "a" ]),
-        "new": function(a) {
-            return h._[a].cloneNode(false);
+        "new": function(e) {
+            return HTMLElement._[e].cloneNode(false);
         }
     };
-    function i(a) {
-        return typeof a === "boolean" || typeof a === "object" && typeof a.valueOf() === "boolean";
+    function isBoolean(b) {
+        return typeof b === "boolean" || typeof b === "object" && typeof b.valueOf() === "boolean";
     }
-    var j = 0, k = 0;
-    function l(a, b) {
-        var c = [];
-        for (var d in a) {
-            if (a.hasOwnProperty(d)) {
-                var e = b ? b + "[" + d + "]" : d, f = a[d];
-                c.push(typeof f == "object" ? l(f, e) : encodeURIComponent(e) + "=" + encodeURIComponent(f));
+    var count = 0, done = 0;
+    function serialize(obj, prefix) {
+        var str = [];
+        for (var p in obj) {
+            if (obj.hasOwnProperty(p)) {
+                var k = prefix ? prefix + "[" + p + "]" : p, v = obj[p];
+                str.push(typeof v == "object" ? serialize(v, k) : encodeURIComponent(k) + "=" + encodeURIComponent(v));
             }
         }
-        return c.join("&");
+        return str.join("&");
     }
-    function m(a) {
-        var b = document.createElement("script"), c = 0;
-        b.src = a;
-        b.async = true;
-        b.onload = b.onreadystatechange = function() {
-            if (!c && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete")) {
-                c = true;
-                b.onload = b.onreadystatechange = null;
-                if (b && b.parentNode) {
-                    b.parentNode.removeChild(b);
+    function load(url) {
+        var script = document.createElement("script"), done = 0;
+        script.src = url;
+        script.async = true;
+        script.onload = script.onreadystatechange = function() {
+            if (!done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete")) {
+                done = true;
+                script.onload = script.onreadystatechange = null;
+                if (script && script.parentNode) {
+                    script.parentNode.removeChild(script);
                 }
             }
         };
-        document.getElementsByTagName("head")[0].appendChild(b);
+        document.getElementsByTagName("head")[0].appendChild(script);
     }
-    function n(a, b, c) {
-        var d = "";
-        if (typeof b === "function" && typeof c === "undefined") {
-            c = b;
+    function get(url, params, callback) {
+        var query = "";
+        if (typeof params === "function" && typeof callback === "undefined") {
+            callback = params;
         } else {
-            d = l(b);
+            query = serialize(params);
         }
-        j += 1;
-        var e = "phealer" + "_" + new Date().valueOf() + j;
-        window[e] = function(a) {
-            c && c(a);
+        count += 1;
+        var fname = "phealer" + "_" + new Date().valueOf() + count;
+        window[fname] = function(response) {
+            callback && callback(response);
             try {
-                delete window[e];
-            } catch (b) {}
-            window[e] = null;
+                delete window[fname];
+            } catch (e) {}
+            window[fname] = null;
         };
-        m(a + d + "&amp;callback=" + e);
+        load(url + query + "&amp;callback=" + fname);
     }
-    var o = function(a) {
-        var b = this;
-        var c = a.getAttribute("data-access-token");
-        if (c === undefined || c === null) {
+    var Instagramas = function(element) {
+        var $this = this;
+        var access_token = element.getAttribute("data-access-token");
+        if (access_token === undefined || access_token === null) {
             throw "Instagramas missing access token: Instagramas needs access token to fetch information from instragram.";
         } else {
-            a.removeAttribute("data-access-token");
+            element.removeAttribute("data-access-token");
         }
-        b.element = a;
-        b.children = [];
-        b.childrenLoaded = 1;
-        for (var d in f) {
-            b[f[d].attributeName] = i(f[d].defaultValue) ? a.getAttribute(d) === "true" || f[d].defaultValue : a.getAttribute(d) || f[d].defaultValue;
+        $this.element = element;
+        $this.children = [];
+        $this.childrenLoaded = 1;
+        for (var member in data) {
+            $this[data[member].attributeName] = isBoolean(data[member].defaultValue) ? element.getAttribute(member) === "true" || data[member].defaultValue : element.getAttribute(member) || data[member].defaultValue;
         }
-        var j = e + "count=" + b.count + "&amp;" + "access_token=" + c;
-        b.loader = h.new("div");
-        b.loader.className = "loader";
-        b.loader.innerHTML = g.loader;
-        b.element.appendChild(b.loader);
-        b.element.setAttribute("data-state", "initiated");
-        b.get(j, b.create);
+        var source = API_PREFIX + "count=" + $this.count + "&amp;" + "access_token=" + access_token;
+        $this.loader = HTMLElement.new("div");
+        $this.loader.className = "loader";
+        $this.loader.innerHTML = template.loader;
+        $this.element.appendChild($this.loader);
+        $this.element.setAttribute("data-state", "initiated");
+        $this.get(source, $this.create);
     };
-    o.prototype.childLoaded = function() {
-        var a = this;
-        if (a.children.length === a.childrenLoaded) {
-            a.childrenLoaded = null;
-            delete a.childrenLoaded;
-            return a.ready();
+    Instagramas.prototype.childLoaded = function() {
+        var $this = this;
+        if ($this.children.length === $this.childrenLoaded) {
+            $this.childrenLoaded = null;
+            delete $this.childrenLoaded;
+            return $this.ready();
         }
-        a.childrenLoaded += 1;
-        return a;
+        $this.childrenLoaded += 1;
+        return $this;
     };
-    o.prototype.ready = function() {
-        var a = this;
-        a.element.setAttribute("data-state", "ready");
-        a.element.removeChild(a.loader);
-        return a;
+    Instagramas.prototype.ready = function() {
+        var $this = this;
+        $this.element.setAttribute("data-state", "ready");
+        $this.element.removeChild($this.loader);
+        return $this;
     };
-    o.prototype.get = function(a, b) {
-        var c = this;
-        c.element.setAttribute("data-state", "get:in-progress");
-        function d(a) {
-            c.element.setAttribute("data-state", "get:success");
-            b.call(c, a);
+    Instagramas.prototype.get = function(source, callback) {
+        var $this = this;
+        $this.element.setAttribute("data-state", "get:in-progress");
+        function success(response) {
+            $this.element.setAttribute("data-state", "get:success");
+            callback.call($this, response);
         }
-        n(a, d);
-        return c;
+        get(source, success);
+        return $this;
     };
-    o.prototype.create = function(a) {
-        var b = this;
-        var c;
-        if (!a.data) {
+    Instagramas.prototype.create = function(response) {
+        var $this = this;
+        var i;
+        if (!response.data) {
             return;
         }
-        for (c = 0; c < a.data.length; c += 1) {
-            b.children.push(new p(a.data[c], b));
+        for (i = 0; i < response.data.length; i += 1) {
+            $this.children.push(new Instagrama(response.data[i], $this));
         }
-        b.element.setAttribute("data-state", "created");
-        return b;
+        $this.element.setAttribute("data-state", "created");
+        return $this;
     };
-    var p = function(a, b) {
-        if (!a) {
+    var Instagrama = function($data, $parent) {
+        if (!$data) {
             return this;
         }
-        var c = this;
-        c.parent = b;
-        c.data = a;
-        c.render();
-        return c;
+        var $this = this;
+        $this.parent = $parent;
+        $this.data = $data;
+        $this.render();
+        return $this;
     };
-    p.prototype.render = function() {
-        var a = this, b, c, d, e, f, i, j, k = "", l = 0;
-        b = h.new("figure");
-        b.className = "instagrama-" + a.data.type;
-        e = h.new("a");
-        e.target = "_blank";
-        e.className = "instagrama";
-        e.href = a.data.link;
-        b.appendChild(e);
-        j = h.new("img");
-        j.alt = a.data.caption.text;
-        j.src = a.data.images[a.parent.renderType].url;
-        j.onload = function() {
-            a.parent.childLoaded.apply(a.parent, arguments);
+    Instagrama.prototype.render = function() {
+        var $this = this, figure, tagscaption, likescaption, a, i, t, img, tags = "", likes = 0;
+        figure = HTMLElement.new("figure");
+        figure.className = "instagrama-" + $this.data.type;
+        a = HTMLElement.new("a");
+        a.target = "_blank";
+        a.className = "instagrama";
+        a.href = $this.data.link;
+        figure.appendChild(a);
+        img = HTMLElement.new("img");
+        img.alt = $this.data.caption.text;
+        img.src = $this.data.images[$this.parent.renderType].url;
+        img.onload = function() {
+            $this.parent.childLoaded.apply($this.parent, arguments);
         };
-        e.appendChild(j);
-        if (a.parent.showLikes) {
-            d = h.new("figcaption");
-            d.className = "instagrama-likes";
-            d.innerHTML = a.data.likes.count;
-            e.appendChild(d);
+        a.appendChild(img);
+        if ($this.parent.showLikes) {
+            likescaption = HTMLElement.new("figcaption");
+            likescaption.className = "instagrama-likes";
+            likescaption.innerHTML = $this.data.likes.count;
+            a.appendChild(likescaption);
         }
-        if (a.parent.showTags) {
-            i = a.parent.showTagsCount || a.data.tags.length;
-            for (f = 0; f < i; f += 1) {
-                if (!a.data.tags[f]) {
+        if ($this.parent.showTags) {
+            t = $this.parent.showTagsCount || $this.data.tags.length;
+            for (i = 0; i < t; i += 1) {
+                if (!$this.data.tags[i]) {
                     continue;
                 }
-                k += g.tag.replace("{{tag}}", a.data.tags[f]);
+                tags += template.tag.replace("{{tag}}", $this.data.tags[i]);
             }
-            c = h.new("figcaption");
-            c.className = "instagrama-tags";
-            c.innerHTML = k;
-            e.appendChild(c);
+            tagscaption = HTMLElement.new("figcaption");
+            tagscaption.className = "instagrama-tags";
+            tagscaption.innerHTML = tags;
+            a.appendChild(tagscaption);
         }
-        a.parent.element.appendChild(b);
-        return a;
+        $this.parent.element.appendChild(figure);
+        return $this;
     };
-    function q() {
+    function ready() {
         console.log("ready");
-        var a = [], b, c = document, d = c.documentElement.doScroll, e = "DOMContentLoaded", f = (d ? /^loaded|^c/ : /^loaded|^i|^c/).test(c.readyState);
-        if (!f) {
-            c.addEventListener(e, b = function() {
-                c.removeEventListener(e, b);
-                f = 1;
-                while (b = a.shift()) b();
+        var fns = [], listener, doc = document, hack = doc.documentElement.doScroll, domContentLoaded = "DOMContentLoaded", loaded = (hack ? /^loaded|^c/ : /^loaded|^i|^c/).test(doc.readyState);
+        if (!loaded) {
+            doc.addEventListener(domContentLoaded, listener = function() {
+                doc.removeEventListener(domContentLoaded, listener);
+                loaded = 1;
+                while (listener = fns.shift()) listener();
             });
         }
-        return function(b) {
+        return function(fn) {
             console.log("ready adding");
-            f ? setTimeout(b, 0) : a.push(b);
+            loaded ? setTimeout(fn, 0) : fns.push(fn);
         };
     }
-    var r = d.querySelectorAll(".instagramas");
-    console.log("instagramas", r);
-    if (r !== undefined || r !== null) {
-        var s = c._instagramas_namespace || "_Instagramas";
-        c._instagramas_namespace = s;
-        c[s] = {
+    var instagramas = $d.querySelectorAll(".instagramas");
+    console.log("instagramas", instagramas);
+    if (instagramas !== undefined || instagramas !== null) {
+        var namespace = $w._instagramas_namespace || "_Instagramas";
+        $w._instagramas_namespace = namespace;
+        $w[namespace] = {
             collection: []
         };
-        q(function t() {
+        ready(function start() {
             console.log("start");
-            for (var a = 0; a < r.length; a += 1) {
-                c[s].collection.push(new o(r[a]));
+            for (var i = 0; i < instagramas.length; i += 1) {
+                $w[namespace].collection.push(new Instagramas(instagramas[i]));
             }
         });
     }
-    b["true"] = a;
+    global["true"] = exports;
 })({}, function() {
     return this;
 }());
