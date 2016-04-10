@@ -158,15 +158,13 @@
         c[m] = {
             collection: []
         };
-        console.log('addEventListener', d);
         // d.addEventListener("DOMContentLoaded", function r() {
-        window.document.onload = function r() {
-            console.log('DOMContentLoaded');
+            // console.log('DOMContentLoaded');
             for (var a = 0; a < l.length; a += 1) {
                 c[m].collection.push(new j(l[a]));
             }
         // });
-        };
+        // console.log('addEventListener', d.onload);
     }
     var n = 0;
     function o(a, b) {
