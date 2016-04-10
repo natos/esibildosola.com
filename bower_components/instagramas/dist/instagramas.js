@@ -160,7 +160,7 @@
         };
         console.log('addEventListener', d);
         // d.addEventListener("DOMContentLoaded", function r() {
-        d.onload = function r() {
+        window.document.onload = function r() {
             console.log('DOMContentLoaded');
             for (var a = 0; a < l.length; a += 1) {
                 c[m].collection.push(new j(l[a]));
