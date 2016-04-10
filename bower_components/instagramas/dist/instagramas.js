@@ -152,6 +152,7 @@
         return a;
     };
     var l = d.querySelectorAll(".instagramas");
+    console.log('instagramas', l);
     if (l !== undefined || l !== null) {
         var m = c._instagramas_namespace || "_Instagramas";
         c[m] = {
@@ -159,7 +160,6 @@
         };
         d.addEventListener("DOMContentLoaded", function r() {
             console.log('DOMContentLoaded');
-            console.log('instagramas', l);
             for (var a = 0; a < l.length; a += 1) {
                 c[m].collection.push(new j(l[a]));
             }
