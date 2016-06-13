@@ -1,26 +1,11 @@
 [links]
-[links.twitter]
-  name = "Twitter"
-  identifier = "twitter"
-  url = "https://twitter.com/PulgaMimetica"
-  icon = "fa fa-twitter-square"
 [links.facebook]
   name = "Facebook"
   identifier = "facebook"
-  url = "https://www.facebook.com/MarcelaViola.Aerialist"
+  url = "https://www.facebook.com/esi.bildosola"
   icon = "fa fa-facebook-square"
 [links.instagram]
   name = "Instagram"
   identifier = "instagram"
-  url = "https://www.instagram.com/pulgacion/"
+  url = "https://www.instagram.com/esibildosola/"
   icon = "fa fa-instagram"
-[links.vimeo]
-  name = "Vimeo"
-  identifier = "vimeo"
-  url = "https://vimeo.com/user13778635/videos"
-  icon = "fa fa-vimeo-square"
-[links.medium]
-  name = "Medium"
-  identifier = "medium"
-  url = "https://medium.com/@marcelaviola"
-  icon = "fa fa-medium"

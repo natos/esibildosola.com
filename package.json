@@ -1,7 +1,7 @@
 {
-  "name": "marcelaviola.com.ar",
+  "name": "esibildosola.com",
   "version": "1.0.0",
-  "description": "Marcela Viola Web Site",
+  "description": "Esi Bildosola Web Site",
   "main": "gruntfile.js",
   "dependencies": {
     "grunt": "^0.4.5"

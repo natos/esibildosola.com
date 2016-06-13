@@ -1,5 +1,13 @@
-{{ partial "head.html" . }}
-{{ partial "about.html" . }}
-{{ partial "instagramas.html" . }}
-{{ partial "friends.html" . }}
-{{ partial "foot.html" . }}
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}" class="no-js">
+  {{ partial "meta.html" . }}
+  <body>
+    {{ partial "call.html" . }}
+    {{ partial "landing.html" . }}
+    {{ partial "program.html" . }}
+    {{ partial "about.html" . }}
+    {{ partial "champion.html" . }}
+    {{ partial "contact.html" . }}
+    {{ partial "credits.html" . }}
+  </body>
+</html>

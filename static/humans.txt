@@ -4,12 +4,12 @@
 Design: Natan Santolo
 Contact: natansantolo.com
 Twitter: @natos
-From: Amstedam, Netherlands
+From: Amsterdam, Netherlands
 
-Content: Marcela Viola
-Contact: marcelaviola.com.ar
-Twitter: @pulgamimetica
-From: Amstedam, Netherlands
+Content: Esi Bildosola
+Contact: esibildosola.com.ar
+Instagram: @esibildosola
+From: Tel Aviv, Israel
 
 /* THANKS */
 

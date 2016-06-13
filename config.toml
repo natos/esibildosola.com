@@ -1,8 +1,8 @@
-title = "Marcela Viola"
-baseurl = "http://www.marcelaviola.com.ar"
+title = "Esi Bildosola"
+baseurl = "http://www.esibildosola.com"
 [params]
-  description = "Aerialist, silks, lyra, and straps."
-  keywords = "marcela, viola, aerialist, artist, shows, teacher, silks, lyra, hoop, rope, straps, yoga, healthy, amsterdam, flexibility, classes, lessons"
+  description = "Esi Personal Trainer. One body. One Trainer."
+  keywords = "Esi, Sports, Crossfit, JustFit, JustFit.vienna, yoga, modeling"
 
 languagecode = "en_US"
 contentdir = "content"
@@ -21,30 +21,3 @@ watch = true
 
 [author]
   name = "Natan Santolo"
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-
-SectionPagesMenu = "main"
-
-[[menu.main]]
-  weight = 0
-  name = "About"
-  url = "/"
-[[menu.main]]
-  weight = 1
-  name = "Shows"
-  url = "/shows/"
-[[menu.main]]
-  weight = 2
-  name = "Classes"
-  url = "/classes/"
-[[menu.main]]
-  weight = 3
-  name = "Workshops"
-  url = "/workshops/"
-[[menu.main]]
-  weight = 10
-  name = "Contact"
-  url = "/contact/"
