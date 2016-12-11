@@ -56,8 +56,9 @@ table {
 html {
   height: 100%;
   overflow: hidden;
+  margin:0;
+  padding:0;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -132,7 +133,7 @@ h4 {
 /* containers */
 
 .slide {
-  background-color: #333;
+  /*background-color: #333;*/
   position: relative;
   padding: 25vh 10%;
   min-height: 100vh;
@@ -146,7 +147,6 @@ h4 {
   -webkit-transform-style: inherit;
   -ms-transform-style: inherit;
   transform-style: inherit;
-
 }
 
 .slide:before {
@@ -245,7 +245,7 @@ h4 {
 
 #landing {
   background-image: url("../images/IMG_1677.JPG");
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   text-align: right;
 }
 
@@ -264,7 +264,7 @@ h4 {
 
 #program:before {
   background-image: url("../images/IMG_1715.JPG");
-  transform: translateZ(-1px) scale(2);
+  /*transform: translateZ(-1px) scale(2);*/
   z-index:-1;
 }
 
@@ -317,7 +317,7 @@ h4 {
 
 #about {
   background-image: url("../images/IMG_1027.JPG");
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
 }
 
 #about .title {
@@ -331,9 +331,9 @@ h4 {
 }
 
 
-#champion:before {
+#champion::before {
   background-image: url("../images/IMG_1026.JPG");
-  transform: translateZ(-1px) scale(2);
+  /*transform: translateZ(-1px) scale(2);*/
   z-index:-1;
 }
 
@@ -342,12 +342,11 @@ h4 {
 }
 
 #contact {
-  /*background: url('../img/videoframe.jpg') center center / cover no-repeat;*/
   background-image: url("../images/IMG_1718.JPG");
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
 }
 
-#credits:before {
+#credits::before {
   z-index: -100;
 }
 
