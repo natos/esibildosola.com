@@ -2,5 +2,3 @@
 # esibildosola.com.ar
 
 Esi Bildosola Official Web Site
-
-[Live](http://www.esibildosola.com.ar)
